@@ -1,57 +1,40 @@
-# Steal My Settings | STMS 📷
-Social Platform for Reproducible Photography
+# SnowTrickr | STr 🏂
 
 ---
 
 ## USP (Unique Selling Proposition)
 
-**STMS** ist eine spezialisierte Social-Media-Plattform für Fotographen, auf der Bilder nicht nur geteilt, sondern technisch nachvollziehbar gemacht werden.
+**STr** ermöglicht es, Snowboard-Tricks nicht nur anzusehen, sondern sie auch zu favorisieren und gezielt zum Lernen zu markieren. Dadurch können Nutzer ihre persönlichen Fortschritte beim Lernen neuer Tricks organisieren.
 
-Jeder Beitrag enthält:
+Jeder Trick enthält:
 
-1. Eine bearbeitete Version des Fotos (Edited)
-2. Optional eine RAW-Datei oder das Originalbild
-3. Strukturierte Aufnahmeparameter (ISO, Blende, Verschlusszeit, Brennweite, Kamera, Objektiv)
-4. Optional Bearbeitungshinweise oder Preset-Informationen
-
-Im Gegensatz zu klassischen Plattformen steht nicht die reine Präsentation im Vordergrund, sondern die **Reproduzierbarkeit fotografischer Ergebnisse**.
+1. Eine Beschreibung zum Trick und/oder ein Video zum Nachschauen
+2. Optional werden Bilder hinzugefügt, um den Trick genauer zu erklären
+3. Unten gibt es dann die Auswahl für: Favoriten, Lernen | Gemeistert
 
 ---
 
 ## UI & UX
 
 ### Zielgruppe
-Hobby- und Profi-Fotograf:innen, die voneinander lernen und ihre technischen Einstellungen teilen möchten.
+Hobby- und Profi-Snowboarder:innen, die neue Tricks lernen möchten und nicht nur fahren wollen.
 
 ---
 
 ### Hauptfunktionen
 
-#### Registrierung & Login
-Der User kann ein Konto erstellen, um Beiträge zu veröffentlichen, Likes zu vergeben und Kommentare zu schreiben. Zusätzlich erhält jeder User eine eigene Profilseite.
+#### Tricks durchsuchen
+Der User kann auf der Webseite sehen, welche Tricks es gibt und welche er gerne lernen oder meistern möchte. Es wird auch eine Suchleiste geben, um nach Tricks zu suchen.
 
 ---
 
-#### Feed
-Die Startseite ist ähnlich aufgebaut wie ein moderner Social-Media-Feed (eine fyp). Beiträge werden in einem übersichtlichen Grid dargestellt. User können Beiträge liken, kommentieren und die Profile anderer Notzer ansehen.
+#### Kontosystem
+Wenn der User etwas favorisieren möchte, muss er ein Konto erstellen, um diese Daten zu speichern und von überall darauf zugreifen zu können.
 
 ---
 
-#### Post erstellen
-Beim Erstellen eines Posts werden Bilder hochgeladen sowie die wichtigsten technischen Daten eingegeben, zum Beispiel:
-
-- Kamera
-- ISO
-- Blende (f/)
-- Verschlusszeit
-- Brennweite
-
-Diese Informationen werden strukturiert in der Datenbank gespeichert.
-
----
-
-#### Profil
-Auf der Profilseite sieht man eine Übersicht aller Beiträge eines Users sowie dessen Profilinformationen.
+#### Filtersystem
+Weiters kann der User nicht nur nach Tricks suchen, sondern sie auch filtern, wenn er vielleicht etwas Neues aus einer bestimmten Kategorie ausprobieren möchte.
 
 ---
 
@@ -76,11 +59,16 @@ Das Backend wird umgesetzt mit:
 Die Anwendung ist stark datenbankbasiert aufgebaut. Die Datenbank wird relational strukturiert und enthält unter anderem folgende Tabellen:
 
 - **users**
-- **posts**
-- **shot_settings**
-- **comments**
-- **likes**
-- **follows**
+- **schwierigkeit**
+- **trick**
+- **favorite**
+- **lernen**
+- **gemeistert**
+
+optional wenn ich dazu komme:
+
+- **kommentare**
+- **kategorei**
 
 Die Tabellen stehen über Primär- und Fremdschlüssel miteinander in Beziehung.
 
@@ -88,4 +76,4 @@ Die Tabellen stehen über Primär- und Fremdschlüssel miteinander in Beziehung.
 
 ## Zusammenfassung
 
-STMS ist eine Webplattform für Fotographen, die nicht nur Inspiration suchen. Der Fokus liegt auf dem technischem Austausch und reproduzierbarer der Fotografie.
+**STr** ist eine Webplattform für Snowboarder, die auch andere Tricks ausprobieren möchten und nicht nur herumcarven wollen.
