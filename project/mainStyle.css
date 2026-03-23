@@ -31,6 +31,28 @@
 /*********************************
  * Allgemeines
  ********************************/
+:root{
+    /***** Farben *****/
+    /*** Standart ***/
+    --color-white: #FAFAFA;
+    --color-primary-blue: #0A369D;
+    --color-secondary-blue: #4472CA;
+    --color-tertiary-blue: #5E7CE2;
+    --color-gray: #888888;
+
+    /***** Fonts *****/
+    --font-inter: Inter;
+    --font-IBM: "IMB Plex Mono";
+    --font-size-xl: 32px;
+    --font-size-l: 27px;
+    --font-size-m: 22px;
+    --font-size-big: 18px;
+    --font-letterspacing:25%;
+
+    /***** Boxen *****/
+    --border-radius: 10px;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -38,5 +60,4 @@
 body, html{
     margin: 0px;
     padding: 0px;
-    font-family: Inter;
 }
