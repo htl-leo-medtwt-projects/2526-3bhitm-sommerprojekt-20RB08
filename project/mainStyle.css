@@ -101,15 +101,11 @@ body, html{
     align-items: center;
 }
 
-#aktivePage {
-    font-weight: bold;
-    color: var(--color-black) !important;
-}
-
-#nav a {
-    text-decoration: none;
-    color: var(--color-gray);
-
+#nav-right{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 30%;
 }
 
 #nav-left{
@@ -118,6 +114,20 @@ body, html{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#aktivePage {
+    font-weight: bold;
+    color: var(--color-black) !important;
+}
+
+#nav-left a {
+    text-decoration: none;
+    color: var(--color-gray);
+}
+
+#nav-left a:hover{
+    text-decoration: underline;
 }
 
 /*********************************
@@ -131,3 +141,25 @@ body, html{
  /*********************************
  * Boxen
  ********************************/
+ /***** Button *****/
+ .button {
+    width: fit-content;
+
+    background-color: var(--color-secondary-blue);
+    color: var(--color-white);
+
+    padding: 2%;
+
+    border-radius: var(--border-radius);
+    text-decoration: none;
+
+    transition: all 0.15s;
+ }
+
+ .button:hover{
+    transform: scale(1.1);
+ }
+
+ .button:active{
+    transform: scale(1);
+ }
