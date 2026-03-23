@@ -1,0 +1,19 @@
+/*********************************
+ * Header
+ ********************************/
+ #header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+ }
+
+ /*** slang ***/
+ #slang{
+    height: 50px;
+    overflow: hidden;
+ }
