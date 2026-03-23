@@ -34,23 +34,26 @@
 :root{
     /***** Farben *****/
     /*** Standart ***/
-    --color-white: #FAFAFA;
+    --color-darker-white: #FAFAFA;
     --color-primary-blue: #0A369D;
     --color-secondary-blue: #4472CA;
     --color-tertiary-blue: #5E7CE2;
     --color-gray: #888888;
+    --color-black: #000000;
+    --color-white: #ffffff;
 
     /***** Fonts *****/
     --font-inter: Inter;
-    --font-IBM: "IMB Plex Mono";
+    --font-IBM: "IBM Plex Mono";
     --font-size-xl: 32px;
     --font-size-l: 27px;
     --font-size-m: 22px;
-    --font-size-big: 18px;
+    --font-size-s: 18px;
     --font-letterspacing:25%;
 
     /***** Boxen *****/
     --border-radius: 10px;
+    --container-width: 960px;
 }
 
 * {
@@ -60,4 +63,40 @@
 body, html{
     margin: 0px;
     padding: 0px;
+    background-color: var(--color-white);
 }
+
+/*********************************
+ * logo
+    <div class="logo">
+        Snow<span>trickr®</span>
+    </div>
+ ********************************/
+ .logo{
+    color: var(--color-black);
+
+    font-family: var(--font-IBM);
+    font-weight: bold;
+    font-size: var(--font-size-s);
+
+    display: flex;
+    gap: 0px;
+ }
+
+.logo span {
+  color: var(--color-primary-blue);
+}
+
+/*********************************
+ * Boxen
+ ********************************/
+/** nav **/
+#nav {
+
+}
+
+ /** Container **/
+ #container {
+    width: var(--container-width);
+    margin: 0px auto;
+ }
