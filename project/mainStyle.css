@@ -53,7 +53,7 @@
 
     /***** Boxen *****/
     --border-radius: 10px;
-    --container-width: 960px;
+    --page-width: 960px;
 }
 
 * {
@@ -64,6 +64,7 @@ body, html{
     margin: 0px;
     padding: 0px;
     background-color: var(--color-white);
+    font-family: var(--font-inter);
 }
 
 /*********************************
@@ -88,15 +89,45 @@ body, html{
 }
 
 /*********************************
- * Boxen
+ * Nav
  ********************************/
-/** nav **/
 #nav {
+    width: var(--page-width);
+    margin: 0px auto;
+    padding-top: 1%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#aktivePage {
+    font-weight: bold;
+    color: var(--color-black) !important;
+}
+
+#nav a {
+    text-decoration: none;
+    color: var(--color-gray);
 
 }
 
- /** Container **/
+#nav-left{
+    width: 40%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*********************************
+ * Container
+ ********************************/
  #container {
-    width: var(--container-width);
+    width: var(--page-width);
     margin: 0px auto;
  }
+
+ /*********************************
+ * Boxen
+ ********************************/
