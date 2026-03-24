@@ -63,3 +63,11 @@
     background-color: var(--color-gray);
     border-radius: var(--border-radius);
 }
+
+/*********************************
+ * Logo An
+ ********************************/
+ #logoAn {
+    position: relative;
+    left: -50%;
+ }

@@ -45,6 +45,7 @@
     /***** Fonts *****/
     --font-inter: Inter;
     --font-IBM: "IBM Plex Mono";
+    --font-size-huge: 80px;
     --font-size-xl: 32px;
     --font-size-l: 27px;
     --font-size-m: 22px;
@@ -116,6 +117,7 @@ h3 {
     stroke-width: 2px;
     margin-bottom: 500px;
 }
+
 /*********************************
  * logo
     <div class="logo">
@@ -135,6 +137,36 @@ h3 {
 
 .logo span {
     color: var(--color-primary-blue);
+}
+
+/*** logo animation ***/
+.logo-row {
+  display: flex;
+  gap: 5%;
+  position: relative;
+  left: 0%;
+}
+
+.logo-row > * {
+  font-size: var(--font-size-huge);
+  text-transform: uppercase;
+}
+
+.logo-row-goRight {
+  animation: moveLogo 10s linear reverse infinite;
+}
+
+.logo-row-goLeft {
+  animation: moveLogo 10s linear infinite;
+}
+
+@keyframes moveLogo {
+  from {
+    left: 0;
+  }
+  to {
+    left: -60%;
+  }
 }
 
 /*********************************
@@ -229,11 +261,11 @@ h3 {
 }
 
 /***** text *****/
-.box-text{
+.box-text {
     width: 55%;
     margin-top: 2%;
 }
 
-.box-text > *{
+.box-text>* {
     margin-bottom: 2%;
 }
