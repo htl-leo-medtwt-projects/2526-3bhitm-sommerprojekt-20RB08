@@ -70,6 +70,12 @@ html {
     font-family: var(--font-inter);
 }
 
+body {
+    width: 100%;
+    height: fit-content;
+    overflow-x: hidden;
+}
+
 /*********************************
  * Überschrifte / Texte
  ********************************/
