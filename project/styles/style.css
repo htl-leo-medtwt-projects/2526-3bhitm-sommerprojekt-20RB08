@@ -1,7 +1,7 @@
 /*********************************
  * Header
  ********************************/
- #header{
+#header {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,10 +10,35 @@
     font-size: 50px;
     text-align: center;
     font-weight: bold;
- }
+}
 
- /*** slang ***/
- #slang{
-    height: 50px;
+/*** slang ***/
+#slangs {
+    height: 60px;
     overflow: hidden;
- }
+}
+
+#slang{
+    position: relative;
+    top: 0px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+
+     /* Chati Background */
+    background: linear-gradient(45deg, #0A369D 0%, #92B4F4 100%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-clip: text;
+    color: transparent;
+
+    transition: all 1s;
+}
+
+#slang *{
+    margin: 0px;
+    padding: 0px;
+}
