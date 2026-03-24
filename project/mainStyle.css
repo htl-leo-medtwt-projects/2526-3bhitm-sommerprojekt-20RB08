@@ -76,6 +76,8 @@ h1 {
     font-family: var(--font-IBM);
     font-size: var(--font-size-xl);
     color: var(--color-black);
+
+    margin: 0px;
 }
 
 h2 {
@@ -83,6 +85,8 @@ h2 {
     font-size: var(--font-size-l);
     color: var(--color-primary-blue);
     letter-spacing: 25%;
+
+    margin: 0px;
 }
 
 h3 {
@@ -90,12 +94,16 @@ h3 {
     font-size: var(--font-size-m);
     color: var(--color-black);
     font-weight: bold;
+
+    margin: 0px;
 }
 
-h2 {
+.text {
     font-family: var(--font-inter);
     font-size: var(--font-size-s);
     color: var(--color-gray);
+
+    margin: 0px;
 }
 /*********************************
  * logo
@@ -206,4 +214,14 @@ h2 {
     object-fit: cover;
     background: lightgray;
     border-radius: var(--border-radius);
+}
+
+/***** text *****/
+.box-text{
+    width: 55%;
+    margin-top: 2%;
+}
+
+.box-text > *{
+    margin-bottom: 2%;
 }
