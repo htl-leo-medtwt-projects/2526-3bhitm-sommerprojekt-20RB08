@@ -105,6 +105,17 @@ h3 {
 
     margin: 0px;
 }
+
+/*** seperater ***/
+.seperate-l {
+    stroke-width: 2px;
+    margin-bottom: 100px;
+}
+
+.seperate-m {
+    stroke-width: 2px;
+    margin-bottom: 500px;
+}
 /*********************************
  * logo
     <div class="logo">
