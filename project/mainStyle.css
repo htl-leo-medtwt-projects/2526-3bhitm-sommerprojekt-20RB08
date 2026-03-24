@@ -54,7 +54,7 @@
     /***** Boxen *****/
     --border-radius: 10px;
     --page-width: 960px;
-    --area-minHeight: 510px;
+    --area-minHeight: 410px;
 }
 
 * {
@@ -178,6 +178,7 @@ h3 {
 
 .area {
     width: 100%;
+    margin-bottom: 100px;
     min-height: var(--area-minHeight);
 }
 
