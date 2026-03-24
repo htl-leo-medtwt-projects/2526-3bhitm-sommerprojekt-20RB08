@@ -70,6 +70,34 @@ html {
 }
 
 /*********************************
+ * Überschrifte / Texte
+ ********************************/
+h1 {
+    font-family: var(--font-IBM);
+    font-size: var(--font-size-xl);
+    color: var(--color-black);
+}
+
+h2 {
+    font-family: var(--font-inter);
+    font-size: var(--font-size-l);
+    color: var(--color-primary-blue);
+    letter-spacing: 25%;
+}
+
+h3 {
+    font-family: var(--font-inter);
+    font-size: var(--font-size-m);
+    color: var(--color-black);
+    font-weight: bold;
+}
+
+h2 {
+    font-family: var(--font-inter);
+    font-size: var(--font-size-s);
+    color: var(--color-gray);
+}
+/*********************************
  * logo
     <div class="logo">
         Snow<span>trickr®</span>
