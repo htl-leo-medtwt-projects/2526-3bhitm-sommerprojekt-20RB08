@@ -70,4 +70,5 @@
  #logoAn {
     position: relative;
     left: -50%;
+    margin-bottom: var(--margin-bottom);
  }

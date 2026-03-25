@@ -56,6 +56,9 @@
     --border-radius: 10px;
     --page-width: 960px;
     --area-minHeight: 410px;
+
+    /*** margins ***/
+    --margin-bottom: 100px; 
 }
 
 * {
@@ -70,7 +73,7 @@ html {
     font-family: var(--font-inter);
 }
 
-body {
+#stage {
     width: 100%;
     height: fit-content;
     overflow-x: hidden;
@@ -116,7 +119,7 @@ h3 {
 /*** seperater ***/
 .seperate-l {
     stroke-width: 2px;
-    margin-bottom: 100px;
+    margin-bottom: var(--margin-bottom);
 }
 
 .seperate-m {
@@ -227,7 +230,7 @@ h3 {
 
 .area {
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: var(--margin-bottom);
     min-height: var(--area-minHeight);
 }
 
