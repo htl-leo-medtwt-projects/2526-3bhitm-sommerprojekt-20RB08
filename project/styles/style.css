@@ -107,9 +107,16 @@
     margin-bottom: 5%;
  }
 
+ /* icon */
  .perk-box i {
-    transform: scale(11);
+    transform: scale(12);
     color: white;
     margin: 0px;
     padding: 0px;
+    transition: all 0.3s ease;
  }
+
+.perk:hover .perk-box i {
+    transform: scale(13);       /* größer werden */
+    color: var(--color-primary-blue);              /* Farbe ändern */
+}
