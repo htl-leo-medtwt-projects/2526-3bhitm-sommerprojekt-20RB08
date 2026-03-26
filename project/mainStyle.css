@@ -358,4 +358,39 @@ h3 {
         /*** margins ***/
         --margin-bottom: 80px;
     }
+
+    /*********************************
+    * Nav
+    ********************************/
+    #nav-left .logo {
+        width: 100%;
+    }
+
+    #nav-left {
+        width: 60%;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /***** Big img *****/
+    /***** text *****/
+    .box-text {
+        width: 90%;
+    }
+
+    /*********************************
+    * Footer
+    ********************************/
+    #footer-nav {
+        flex-direction: column;
+    }
+
+    /*** footer-infos ***/
+    #footer-infos {
+        margin-top: 2%
+    }
+
 }
