@@ -334,7 +334,7 @@ h3 {
 
         /***** Boxen *****/
         --page-width: 770px;
-        --area-minHeight: 410px;
+        --area-minHeight: 310px;
 
         /*** margins ***/
         --margin-bottom: 80px;
@@ -353,7 +353,7 @@ h3 {
 
         /***** Boxen *****/
         --page-width: 350px;
-        --area-minHeight: 410px;
+        --area-minHeight: 210px;
 
         /*** margins ***/
         --margin-bottom: 80px;
