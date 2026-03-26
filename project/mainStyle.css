@@ -59,7 +59,7 @@
     --area-minHeight: 410px;
 
     /*** margins ***/
-    --margin-bottom: 100px; 
+    --margin-bottom: 100px;
 }
 
 * {
@@ -156,32 +156,33 @@ h3 {
 
 /*** logo animation ***/
 .logo-row {
-  display: flex;
-  gap: 5%;
-  position: relative;
-  left: 0%;
+    display: flex;
+    gap: 5%;
+    position: relative;
+    left: 0%;
 }
 
-.logo-row > * {
-  font-size: var(--font-size-huge);
-  text-transform: uppercase;
+.logo-row>* {
+    font-size: var(--font-size-huge);
+    text-transform: uppercase;
 }
 
 .logo-row-goRight {
-  animation: moveLogo 10s linear reverse infinite;
+    animation: moveLogo 10s linear reverse infinite;
 }
 
 .logo-row-goLeft {
-  animation: moveLogo 10s linear infinite;
+    animation: moveLogo 10s linear infinite;
 }
 
 @keyframes moveLogo {
-  from {
-    left: 0;
-  }
-  to {
-    left: -60%;
-  }
+    from {
+        left: 0;
+    }
+
+    to {
+        left: -60%;
+    }
 }
 
 /*********************************
@@ -290,7 +291,7 @@ h3 {
  ********************************/
 #footer {
     margin-bottom: var(--margin-bottom);
-} 
+}
 
 #footer-nav {
     display: flex;
@@ -298,14 +299,14 @@ h3 {
 }
 
 /*** footer-infos ***/
-#footer-infos{
+#footer-infos {
     width: fit-content;
     display: flex;
     justify-content: space-between;
     gap: 50px;
 }
 
-.footer-info{
+.footer-info {
     width: fit-content;
     display: flex;
     flex-direction: column;
@@ -313,7 +314,48 @@ h3 {
     color: var(--color-gray);
 }
 
-.footer-info .fh{
+.footer-info .fh {
     color: var(--color-black);
     font-weight: bold;
+}
+
+
+/*********************************************************************************************************************************
+ * Responsive
+ ********************************************************************************************************************************/
+/********** Tablet **********/
+@media (max-width: 1199px) {
+    :root {
+        --font-size-huge: 80px;
+        --font-size-xl: 30px;
+        --font-size-l: 25px;
+        --font-size-m: 20px;
+        --font-size-s: 16px;
+
+        /***** Boxen *****/
+        --page-width: 770px;
+        --area-minHeight: 410px;
+
+        /*** margins ***/
+        --margin-bottom: 80px;
+    }
+}
+
+/********** Handy **********/
+/* Handy (unter 480px) */
+@media (max-width: 809px) {
+    :root {
+        --font-size-huge: 80px;
+        --font-size-xl: 30px;
+        --font-size-l: 25px;
+        --font-size-m: 20px;
+        --font-size-s: 16px;
+
+        /***** Boxen *****/
+        --page-width: 350px;
+        --area-minHeight: 410px;
+
+        /*** margins ***/
+        --margin-bottom: 80px;
+    }
 }
