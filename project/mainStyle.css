@@ -118,6 +118,11 @@ h3 {
 }
 
 /*** seperater ***/
+.seperate-s {
+    stroke: 2px;
+    margin-bottom: 50px;
+}
+
 .seperate-l {
     stroke-width: 2px;
     margin-bottom: var(--margin-bottom);
@@ -278,4 +283,37 @@ h3 {
 
 .box-text>* {
     margin-bottom: 2%;
+}
+
+/*********************************
+ * Footer
+ ********************************/
+#footer {
+    margin-bottom: var(--margin-bottom);
+} 
+
+#footer-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*** footer-infos ***/
+#footer-infos{
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.footer-info{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    color: var(--color-gray);
+}
+
+.footer-info .fh{
+    color: var(--color-black);
+    font-weight: bold;
 }
