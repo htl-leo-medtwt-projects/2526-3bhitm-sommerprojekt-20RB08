@@ -67,8 +67,9 @@
     overflow: hidden;
 }
 
-.trickCard h1, .trickCard .text {
-     color: var(--color-white) !important;
+.trickCard h1,
+.trickCard .text {
+    color: var(--color-white) !important;
 }
 
 .trickCard img {
@@ -235,4 +236,14 @@
         /* Farbe ändern */
     }
 
+    /*********************************
+    * Tricks Cards
+    ********************************/
+    #trickCards {
+        grid-template-columns: 95%;
+    }
+
+    #logoAn *{
+        font-size: 50px !important;
+    }
 }
