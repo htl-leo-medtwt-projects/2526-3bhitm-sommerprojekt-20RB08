@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F3D39327-B761-55E6-BDD5-5C849EA51279" name="User_Trick">
+<createdBy>reb</createdBy>
+<createdTime>2026-04-07 14:25:54 UTC</createdTime>
+<ownerDesignName>snowtrickr</ownerDesignName>
+<engineerTo>
+<item key="9D4DD049-21B6-8624-5318-6D593D9365EF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="is_favorite" id="DA0D6058-5FC9-1FBC-60BE-C3C61EADC4A1">
+<createdBy>reb</createdBy>
+<createdTime>2026-04-07 14:26:26 UTC</createdTime>
+<ownerDesignName>snowtrickr</ownerDesignName>
+<engineerTo>
+<item key="9D4DD049-21B6-8624-5318-6D593D9365EF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="username" id="05DEF23A-D2A5-10E6-72C6-C8AC03DACFD0">
+<createdBy>reb</createdBy>
+<createdTime>2026-04-07 14:30:12 UTC</createdTime>
+<generatorID>0115349E-4468-1255-3353-B03E40A38212</generatorID>
+<ownerDesignName>snowtrickr</ownerDesignName>
+<engineerTo>
+<item key="9D4DD049-21B6-8624-5318-6D593D9365EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>B1B2C456-FCD8-52C1-6DB8-A61F8A640310</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>38531BB3-A4A3-A095-3048-3FDDE03CEB06</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>
