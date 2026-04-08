@@ -20,7 +20,22 @@
 <body>
     <!--Nav-->
     <div id="nav">
+        <!--left-->
+        <div id="nav-left">
+            <!--Logo-->
+            <div class="logo">
+                Snow<span>trickr®</span>
+            </div>
+            <!--wege-->
+            <a href="index.html" id="aktivePage">Home</a>
+            <a href="pages/tricks.php">Browse Tricks</a>
+        </div>
 
+        <!--left-->
+        <div id="nav-right">
+            <!--Login-->
+            <a href="" class="button">Sign up</a>
+        </div>
     </div>
 
     <!--Conatiner-->

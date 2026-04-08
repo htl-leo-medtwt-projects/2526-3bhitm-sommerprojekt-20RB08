@@ -44,7 +44,7 @@ const navInput = `<!--left-->
             </div>
             <!--wege-->
             <a href="index.html" id="aktivePage">Home</a>
-            <a href="#">Browse Tricks</a>
+            <a href="pages/tricks.php">Browse Tricks</a>
         </div>
 
         <!--left-->
