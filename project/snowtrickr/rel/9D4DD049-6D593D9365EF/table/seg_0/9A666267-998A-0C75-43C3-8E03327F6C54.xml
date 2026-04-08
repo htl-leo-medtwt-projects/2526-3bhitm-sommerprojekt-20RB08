@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9A666267-998A-0C75-43C3-8E03327F6C54" name="category">
+<createdBy>reb</createdBy>
+<createdTime>2026-04-07 14:33:04 UTC</createdTime>
+<generatorID>5C89D552-F211-123B-1301-BA47D8DF431C</generatorID>
+<ownerDesignName>snowtrickr</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Name" id="73686A08-55C6-1E28-9CCD-5DB8E5C788C4">
+<createdBy>reb</createdBy>
+<createdTime>2026-04-07 14:33:04 UTC</createdTime>
+<generatorID>ADA67E82-367D-84EE-80B0-79FB5252443A</generatorID>
+<ownerDesignName>snowtrickr</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>38531BB3-A4A3-A095-3048-3FDDE03CEB06</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="60A42E73-0118-C800-4942-EC34B4327F3B">
+<createdBy>reb</createdBy>
+<createdTime>2026-04-07 14:33:04 UTC</createdTime>
+<generatorID>A36184E0-727C-9555-9E70-3611FB5C7867</generatorID>
+<ownerDesignName>snowtrickr</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="category_ID" id="6247D0C5-7795-AA58-6E26-414DE2C00BCE">
+<createdBy>reb</createdBy>
+<createdTime>2026-04-07 14:33:04 UTC</createdTime>
+<ownerDesignName>snowtrickr</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AF2D4AC6-E9C3-CE6B-EE5D-3DE132CAA793" name="category_PK">
+<createdBy>reb</createdBy>
+<createdTime>2026-04-07 14:33:04 UTC</createdTime>
+<ownerDesignName>snowtrickr</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="6247D0C5-7795-AA58-6E26-414DE2C00BCE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

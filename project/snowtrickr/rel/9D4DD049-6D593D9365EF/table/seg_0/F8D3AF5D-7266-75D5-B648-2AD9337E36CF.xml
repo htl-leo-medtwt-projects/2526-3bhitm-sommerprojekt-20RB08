@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F8D3AF5D-7266-75D5-B648-2AD9337E36CF" name="difficulty">
+<createdBy>reb</createdBy>
+<createdTime>2026-04-07 14:33:04 UTC</createdTime>
+<generatorID>7D61462B-8A4D-1337-4553-DC3BC9590D65</generatorID>
+<ownerDesignName>snowtrickr</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Name" id="0B6D3562-FBFD-EDDC-5F41-3C5BAC2A8556">
+<createdBy>reb</createdBy>
+<createdTime>2026-04-07 14:33:04 UTC</createdTime>
+<generatorID>6F93D60D-25D8-FABA-0482-FA01616DDA99</generatorID>
+<ownerDesignName>snowtrickr</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>38531BB3-A4A3-A095-3048-3FDDE03CEB06</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="7385EDA0-B9E7-5F08-2852-CF5CFCD44083">
+<createdBy>reb</createdBy>
+<createdTime>2026-04-07 14:33:04 UTC</createdTime>
+<generatorID>5060E4F5-D060-D2FF-5DAA-9BBEAD05D4F7</generatorID>
+<ownerDesignName>snowtrickr</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="difficulty_ID" id="BE02B857-2112-1FE2-3968-6CD4D1359141">
+<createdBy>reb</createdBy>
+<createdTime>2026-04-07 14:33:04 UTC</createdTime>
+<ownerDesignName>snowtrickr</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="547548F6-8ED3-D910-25CD-AC8C961BA940" name="difficulty_PK">
+<createdBy>reb</createdBy>
+<createdTime>2026-04-07 14:33:04 UTC</createdTime>
+<ownerDesignName>snowtrickr</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="BE02B857-2112-1FE2-3968-6CD4D1359141"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

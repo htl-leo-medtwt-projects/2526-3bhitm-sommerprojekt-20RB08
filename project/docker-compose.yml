@@ -1,0 +1,67 @@
+# Web-App:    http://localhost:9090
+# phpMyAdmin: http://localhost:9091
+#
+# Web-Dateien:
+#   ./htdocs
+#
+# MySQL:
+#   Host: db
+#   Port: 3306
+#   User: root
+#   Password: rootpassword
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: snowtrickr-web
+    restart: unless-stopped
+    volumes:
+      - ./htdocs:/var/www/html
+    ports:
+      - "9090:80"
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - snowtrickr-network
+
+  db:
+    image: mysql:8.4
+    container_name: snowtrickr-db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: snowtrickr
+    volumes:
+      - snowtrickr_db_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-prootpassword"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    networks:
+      - snowtrickr-network
+
+  phpmyadmin:
+    image: phpmyadmin:5.2
+    container_name: snowtrickr-phpmyadmin
+    restart: unless-stopped
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+    ports:
+      - "9091:80"
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - snowtrickr-network
+
+volumes:
+  snowtrickr_db_data:
+
+networks:
+  snowtrickr-network:
+    driver: bridge
