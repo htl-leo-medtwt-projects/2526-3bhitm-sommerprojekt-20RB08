@@ -96,7 +96,7 @@ h2 {
     font-family: var(--font-inter);
     font-size: var(--font-size-l);
     color: var(--color-primary-blue);
-    letter-spacing: 25%;
+    letter-spacing: var(--font-letterspacing);
 
     margin: 0px;
 }

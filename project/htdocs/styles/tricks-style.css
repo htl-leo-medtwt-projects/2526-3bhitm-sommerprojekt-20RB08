@@ -91,7 +91,7 @@
  /*** options ***/
  .options {
     display: flex;
-    gap: var(--border-radius);
+    gap: 20px;
  }
 
 .option {
@@ -106,6 +106,61 @@
     color: var(--color-primary-blue);
 }
 
+/***************************
+ * Card
+ **************************/
+ .card-trick{
+    width: 45%;
+ }
+
+ /**** card-info *****/
+.card-info  {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 Spalten */
+    gap: 5px;
+
+    padding: var(--border-radius);
+}
+
+.card-info div:nth-child(odd) {
+    text-align: left;
+}
+
+.card-info div:nth-child(even) {
+    text-align: right;
+}
+
+/* more */
+.card-info-name{
+    font-weight: bold;
+    color: var(--color-black);
+}
+.card-info-categorie {
+    font-weight: bold;
+    letter-spacing: var(--font-letterspacing);
+}
+/* schwierigkeiten*/
+.card-info-easy{
+    font-weight: bold;
+    color: var(--color-tertiary-blue);
+}
+
+.card-info-advanced{
+    font-weight: bold;
+    color: var(--color-secondary-blue);
+}
+
+.card-info-hard{
+    font-weight: bold;
+    color: var(--color-primary-blue);
+}
+
+/*** description ***/
+.card-description {
+    font-size: var(--font-size-s);
+     padding: 0px var(--border-radius);
+    margin-bottom: var(--border-radius);
+}
 /*********************************************************************************************************************************
  * Responsive
  ********************************************************************************************************************************/

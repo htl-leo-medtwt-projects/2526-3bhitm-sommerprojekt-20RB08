@@ -71,7 +71,7 @@
 
                 <!--Kategorie-->
                 <div class="filter-trick">
-                    <h3>Schwierigkeit</h3>
+                    <h3>Kategorie</h3>
                     <div class="options">
                         <a href="#" class="option option-selected ">Alle</a>
                         <a href="#" class="option">Grundlagen</a>
@@ -94,8 +94,26 @@
             </div>
         </div>
 
+        <!--Card Tricks-->
         <div class="area">
-            <h1>Knus schuzz</h1>
+            <!--Card-Trick-->
+            <div class="card-trick">
+                <!--Bild-->
+                <img src="../img/image.png" alt="curv" class="box-bigImg">
+                <!--Info-->
+                <div class="card-info">
+                    <div class="text card-info-name">Curven</div>
+                    <div class="text card-info-easy">Anfänger</div>
+                    <div class="text card-info-categorie">Grundlagen</div>
+                    <div class="text">4, Dez. 2025</div>
+                </div>
+
+                <!--Description-->
+                <div class="text card-description">
+                    Berschreibung, tricks für dennen die sowas lernen möchten
+                    Knuss aber wer sagt schmutz, keine ahnung was ich schreiben soll
+                </div>
+            </div>
         </div>
 
         <!--Footer-->
