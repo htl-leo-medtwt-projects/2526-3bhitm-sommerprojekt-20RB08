@@ -158,8 +158,16 @@
 /*** description ***/
 .card-description {
     font-size: var(--font-size-s);
-     padding: 0px var(--border-radius);
+    padding: 0px var(--border-radius);
     margin-bottom: var(--border-radius);
+}
+
+/*** status ***/
+.card-status {
+    display: flex;
+    gap: 20px;
+    padding: 0% var(--border-radius);
+    color: var(--color-gray);
 }
 /*********************************************************************************************************************************
  * Responsive

@@ -113,6 +113,29 @@
                     Berschreibung, tricks für dennen die sowas lernen möchten
                     Knuss aber wer sagt schmutz, keine ahnung was ich schreiben soll
                 </div>
+
+                <hr class="seperate">
+
+                <!--Status-->
+                <div class="card-status">
+                    <!--Favorite-->
+                    <div class="card-status-opt">
+                        <i class="fa-regular fa-star fa-sm"></i>
+                        Favorite
+                    </div>
+
+                    <!--Lernen-->
+                    <div class="card-status-opt">
+                        <i class="fa-regular fa-clock fa-sm"></i>
+                        Lernen
+                    </div>
+
+                     <!--Gemeistert-->
+                    <div class="card-status-opt">
+                        <i class="fa-solid fa-check fa-sm"></i>
+                        Gemeistert
+                    </div>
+                </div> 
             </div>
         </div>
 
