@@ -8,6 +8,7 @@
 
     <!--Style-->
     <link rel="stylesheet" href="../mainStyle.css">
+    <link rel="stylesheet" href="../styles/tricks-style.css">
 
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/29a9c6b8a3.js" crossorigin="anonymous"></script>
@@ -37,6 +38,29 @@
 
     <!--container-->
     <div id="container">
+        <!--Filter-Aread-->
+        <div class="area" id="filter-area">
+            <!--Info-->
+            <div id="filter-info">
+                <h2>Alle Snowboard Tricks</h2>
+                <div class="text">Entdecke, lerne und mastere Snowboard tricks. Durchsuche die ganze Bibliothek, da ist für jeden etwas da.</div>
+            </div>
+
+            <!--Filter-->
+            <div id="filter-search">
+               <div id="filter-search">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input placeholder="Suche nach Tricks" type="text" name="text" class="input">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="area">
+            <h1>Knus schuzz</h1>
+        </div>
+
         <!--Footer-->
         <div id="footer">
             <hr class="seperate-s">

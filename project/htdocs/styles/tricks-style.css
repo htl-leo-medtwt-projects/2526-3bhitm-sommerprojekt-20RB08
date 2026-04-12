@@ -1,0 +1,100 @@
+/***************************
+ * Filter
+ **************************/
+#filter-area {
+    padding-top: var(--margin-bottom-small);
+    margin-bottom: var(--margin-bottom-small);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--margin-bottom-small);
+}
+
+#filter-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 45%;
+}
+
+/***** filter-search *****/
+
+/*** search ***/
+/* From Uiverse.io by ErzenXz */ 
+.input {
+  width: 100%;
+  max-width: 300px;
+  height: 45px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1.5px solid lightgrey;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 0px 20px -18px;
+}
+
+.input:hover {
+  border: 2px solid lightgrey;
+  box-shadow: 0px 0px 20px -17px;
+}
+
+.input:active {
+  transform: scale(0.95);
+}
+
+.input:focus {
+  border: 2px solid grey;
+}
+
+/*** search-box von chati ***/
+.search-box {
+    position: relative;
+    width: 300px;
+}
+
+.search-box i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+    font-size: 16px;
+}
+
+.search-box .input {
+    width: 100%;
+    padding: 12px 12px 12px 40px; /* links Platz für die Lupe */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/*********************************************************************************************************************************
+ * Responsive
+ ********************************************************************************************************************************/
+/********** Tablet **********/
+@media (max-width: 1199px) {
+    /***************************
+    * Filter
+    **************************/
+    #filter-info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 60%;
+    }
+}
+
+/********** Handy **********/
+@media (max-width: 809px) {
+    /***************************
+    * Filter
+    **************************/
+    #filter-info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+}

@@ -60,6 +60,7 @@
 
     /*** margins ***/
     --margin-bottom: 100px;
+    --margin-bottom-small: 50px;
 }
 
 * {
