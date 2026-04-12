@@ -38,7 +38,7 @@
 
     <!--container-->
     <div id="container">
-        <!--Filter-Aread-->
+        <!--Filter-Area-->
         <div class="area" id="filter-area">
             <!--Info-->
             <div id="filter-info">
@@ -46,12 +46,49 @@
                 <div class="text">Entdecke, lerne und mastere Snowboard tricks. Durchsuche die ganze Bibliothek, da ist für jeden etwas da.</div>
             </div>
 
-            <!--Filter-->
+            <!--Filter-search-->
             <div id="filter-search">
                <div id="filter-search">
                     <div class="search-box">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <input placeholder="Suche nach Tricks" type="text" name="text" class="input">
+                    </div>
+                </div>
+            </div>
+
+            <!--Filter-trick-->
+            <div id="filter-tricks">
+                <!--Schwierigkeit-->
+                <div class="filter-trick">
+                    <h3>Schwierigkeit</h3>
+                    <div class="options">
+                        <a href="#" class="option option-selected ">Alle</a>
+                        <a href="#" class="option">Anfänger</a>
+                        <a href="#" class="option">Fortgeschritten</a>
+                        <a href="#" class="option">Experte</a>
+                    </div>
+                </div>
+
+                <!--Kategorie-->
+                <div class="filter-trick">
+                    <h3>Schwierigkeit</h3>
+                    <div class="options">
+                        <a href="#" class="option option-selected ">Alle</a>
+                        <a href="#" class="option">Grundlagen</a>
+                        <a href="#" class="option">Rotationen</a>
+                        <a href="#" class="option">Grabs</a>
+                        <a href="#" class="option">Flips</a>
+                    </div>
+                </div>
+
+                <!--Vorliebe-->
+                <div class="filter-trick">
+                    <h3>Vorliebe</h3>
+                    <div class="options">
+                        <a href="#" class="option option-selected ">Alle</a>
+                        <a href="#" class="option">Favoriten</a>
+                        <a href="#" class="option">Lernen</a>
+                        <a href="#" class="option">Gemeistert</a>
                     </div>
                 </div>
             </div>
