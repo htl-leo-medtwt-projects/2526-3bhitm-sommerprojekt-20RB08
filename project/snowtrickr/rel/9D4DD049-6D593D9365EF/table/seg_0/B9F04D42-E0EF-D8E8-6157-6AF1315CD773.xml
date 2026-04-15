@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B9F04D42-E0EF-D8E8-6157-6AF1315CD773" name="trick">
+<createdBy>reb</createdBy>
+<createdTime>2026-04-12 14:08:48 UTC</createdTime>
+<generatorID>A016C14B-A06D-D11B-3E49-1E29ABC93B35</generatorID>
+<ownerDesignName>snowtrickr</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="titel" id="42CFAD3B-D97F-560B-4640-72C1BC0C764E">
+<createdBy>reb</createdBy>
+<createdTime>2026-04-12 14:08:48 UTC</createdTime>
+<generatorID>ACF48031-7B60-EFD3-7BD7-52CB61265A18</generatorID>
+<ownerDesignName>snowtrickr</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>38531BB3-A4A3-A095-3048-3FDDE03CEB06</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_at" id="B3EF2EB8-B2D6-EC39-0596-6F5AA462DAE7">
+<createdBy>reb</createdBy>
+<createdTime>2026-04-12 14:08:48 UTC</createdTime>
+<generatorID>6D4EF41A-D311-9202-5902-E72F1FE8D76B</generatorID>
+<ownerDesignName>snowtrickr</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="FFA5B66E-2797-E617-3E26-2174139FA4D7">
+<createdBy>reb</createdBy>
+<createdTime>2026-04-12 14:08:48 UTC</createdTime>
+<generatorID>2298E03B-7ED8-7FBA-8339-4AEE435B3DB5</generatorID>
+<ownerDesignName>snowtrickr</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID" id="763946DA-0E16-50B6-4CB4-B0187B8B6B5E">
+<createdBy>reb</createdBy>
+<createdTime>2026-04-12 14:08:48 UTC</createdTime>
+<ownerDesignName>snowtrickr</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="difficulty" id="80704A13-2D5A-092D-DEF3-979AE7B4F30D">
+<createdBy>reb</createdBy>
+<createdTime>2026-04-12 14:08:48 UTC</createdTime>
+<ownerDesignName>snowtrickr</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7DC66E7B-6028-220B-5492-DA30B0FAE7C8" referredColumn="1AAB76F9-62FF-DED8-BADF-585A91E9E7DB"/>
+</associations>
+</Column>
+<Column name="category" id="31369775-C4E1-D424-B460-3D04E76FA067">
+<createdBy>reb</createdBy>
+<createdTime>2026-04-12 14:08:48 UTC</createdTime>
+<ownerDesignName>snowtrickr</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BFD5630E-2E46-EC65-935F-6508EA030B1C" referredColumn="DC15BCA3-4DAF-3A1B-796B-72EAEF1277E0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FB8CFABD-737E-7607-6C2A-35BD956E082F" name="PKv4">
+<createdBy>reb</createdBy>
+<createdTime>2026-04-12 14:08:48 UTC</createdTime>
+<ownerDesignName>snowtrickr</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="763946DA-0E16-50B6-4CB4-B0187B8B6B5E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3CE1CF75-C9DA-C77E-DC4E-D8CF6E31B9A1" name="FKv1">
+<createdBy>reb</createdBy>
+<createdTime>2026-04-12 14:08:48 UTC</createdTime>
+<generatorID>5EAB4D29-88A4-D9B7-E99D-6389E8FDD2A0</generatorID>
+<ownerDesignName>snowtrickr</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="80704A13-2D5A-092D-DEF3-979AE7B4F30D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FE0FFCED-670E-892C-BF99-5787EE9AE6D2" name="FKv2">
+<createdBy>reb</createdBy>
+<createdTime>2026-04-12 14:08:48 UTC</createdTime>
+<generatorID>5FEBF36A-45B9-837A-19F7-A9BDD1145545</generatorID>
+<ownerDesignName>snowtrickr</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="31369775-C4E1-D424-B460-3D04E76FA067"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

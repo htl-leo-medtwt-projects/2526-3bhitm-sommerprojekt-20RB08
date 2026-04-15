@@ -47,8 +47,11 @@
 <engineerTo>
 <item key="9D4DD049-21B6-8624-5318-6D593D9365EF" value="true"/>
 </engineerTo>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="created_at" id="4E58FAE2-E031-F42B-8C25-63BAADF62291">
 <createdBy>reb</createdBy>
