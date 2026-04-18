@@ -1,6 +1,6 @@
 <?php
 // MYASQL DATABASE
-$servername = "db_server";
+$servername = "db";
 $port = 3306; // standart port kann man weglassen
 $username = "snowtrickr";
 $password = "snowtrickrpassword";
