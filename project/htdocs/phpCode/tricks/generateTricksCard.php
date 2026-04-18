@@ -27,7 +27,7 @@ function getTrickCard () {
         $s .= "
             <div class='card-trick'>
                     <!--Bild-->
-                    <img src='$img' alt='curv' class='box-bigImg'>
+                    <img src='$img' alt='$titel' class='box-bigImg'>
                     <!--Info-->
                     <div class='card-info'>
                         <div class='text card-info-name'>$titel</div>
@@ -44,7 +44,36 @@ function getTrickCard () {
                     <hr class='seperate'>
         ";
 
-        
+        // ist angemeldetß
+        if (isset($_SESSION['login']) && $_SESSION['login']) {
+
+        } else {
+            // ist nicht angemeldet
+            $s .= "   
+            <!--Status-->
+                    <div class='card-status'>
+                        <!--Favorite-->
+                        <div class='card-status-opt'>
+                            <i class='fa-regular fa-star fa-sm'></i>
+                            Favorite
+                        </div>
+
+                        <!--Lernen-->
+                        <div class='card-status-opt'>
+                            <i class='fa-regular fa-clock fa-sm'></i>
+                            Lernen
+                        </div>
+
+                        <!--Gemeistert-->
+                        <div class='card-status-opt'>
+                            <i class='fa-solid fa-check fa-sm'></i>
+                            Gemeistert
+                        </div>
+                    </div> 
+            </div>";
+
+        }
+
     }
    
     return $s;

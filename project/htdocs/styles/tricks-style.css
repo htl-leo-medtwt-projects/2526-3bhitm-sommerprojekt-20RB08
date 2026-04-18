@@ -107,6 +107,16 @@
 }
 
 /***************************
+ * Card-Tricks
+ **************************/
+#card-tricks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: var(--margin-bottom-small);
+}
+
+/***************************
  * Card
  **************************/
  .card-trick{

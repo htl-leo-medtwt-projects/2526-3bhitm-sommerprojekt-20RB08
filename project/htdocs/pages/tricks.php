@@ -101,7 +101,7 @@ require __DIR__ . '/../phpCode/tricks/generateTricksCard.php';
         </div>
 
         <!--Card Tricks-->
-        <div class="area">
+        <div class="area" id="card-tricks">
             <!--Card-Trick-->
             <div class="card-trick">
                 <!--Bild-->
