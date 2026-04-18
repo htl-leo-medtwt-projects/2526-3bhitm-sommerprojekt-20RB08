@@ -1,7 +1,5 @@
 <?php
 // alles von claude
-// session starten
-session_start();
 
 // db connection holen
 require_once __DIR__ . "/../../datenBank/mysqlConnection.php";
@@ -34,7 +32,7 @@ $isLoggedIn = isset($_SESSION["login"]) && $_SESSION["login"];
 if (!$isLoggedIn) {
     $preference = 'all'; // Vorliebe-Filter hat ohne Login keinen Sinn
 
-    $sql = "SELECT t.id, t.titel, t.description, t.created_at,
+    $sql = "SELECT t.id, t.titel, t.description, t.created_at, t.image_path,
                    d.name AS difficulty_name,
                    c.name AS category_name
             FROM trick t
@@ -48,7 +46,7 @@ if (!$isLoggedIn) {
 } else {
     $username = $_SESSION["username"];
 
-    $sql = "SELECT t.id, t.titel, t.description, t.created_at,
+    $sql = "SELECT t.id, t.titel, t.description, t.created_at, t.image_path,
                    d.name AS difficulty_name,
                    c.name AS category_name,
                    ut.is_favorite,
@@ -119,9 +117,3 @@ $tricks = [];
 while ($row = $result->fetch_assoc()) {
     $tricks[] = $row;
 }
-
-$stmt->close();
-$conn->close();
-
-header('Content-Type: application/json');
-echo json_encode($tricks);

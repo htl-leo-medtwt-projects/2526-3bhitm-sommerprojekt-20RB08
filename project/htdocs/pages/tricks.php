@@ -1,3 +1,9 @@
+<?php
+// imdfilepath
+$imgFilePath = "../img/";
+// requre
+require __DIR__ . '/../phpCode/tricks/generateTricksCard.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -137,6 +143,8 @@
                     </div>
                 </div> 
             </div>
+
+            <?php echo getTrickCard() ?>
         </div>
 
         <!--Footer-->
