@@ -30,3 +30,37 @@ if (isset($_GET['category'])){
 if (isset($_GET['preference'])){
     $_SESSION['filter']['preference'] = $_GET['preference'];
 }
+
+
+/******************
+ *  Funktionen
+ *****************/
+function isDifficultySelected($name) {
+    global $difficulty;
+
+    if ($difficulty == $name) {
+        return "option-selected ";
+    } else {
+        return "";
+    }
+}
+
+function isCategorySelected($name) {
+    global $category;
+
+    if ($category == $name) {
+        return "option-selected ";
+    } else {
+        return "";
+    }
+}
+
+function isPreferenceSelected($name) {
+    global $preference;
+
+    if ($preference == $name) {
+        return "option-selected ";
+    } else {
+        return "";
+    }
+}

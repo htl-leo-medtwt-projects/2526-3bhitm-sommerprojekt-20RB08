@@ -71,10 +71,10 @@ require __DIR__ . '/../phpCode/tricks/generateTricksCard.php';
                 <div class="filter-trick">
                     <h3>Schwierigkeit</h3>
                     <div class="options">
-                        <a href="?difficulty=all" class="option option-selected ">Alle</a>
-                        <a href="?difficulty=anfänger" class="option">Anfänger</a>
-                        <a href="?difficulty=fortgeschritten" class="option">Fortgeschritten</a>
-                        <a href="?difficulty=experte" class="option">Experte</a>
+                        <a href="?difficulty=all"               class="option <?php echo isDifficultySelected("all") ?>">               Alle</a>
+                        <a href="?difficulty=anfänger"          class="option <?php echo isDifficultySelected("anfänger") ?>">          Anfänger</a>
+                        <a href="?difficulty=fortgeschritten"   class="option <?php echo isDifficultySelected("fortgeschritten") ?>">   Fortgeschritten</a>
+                        <a href="?difficulty=experte"           class="option <?php echo isDifficultySelected("experte") ?>">           Experte</a>
                     </div>
                 </div>
 
@@ -82,11 +82,11 @@ require __DIR__ . '/../phpCode/tricks/generateTricksCard.php';
                 <div class="filter-trick">
                     <h3>Kategorie</h3>
                     <div class="options">
-                        <a href="?category=all" class="option option-selected ">Alle</a>
-                        <a href="?category=grundlagen" class="option">Grundlagen</a>
-                        <a href="?category=rotationen" class="option">Rotationen</a>
-                        <a href="?category=grabs" class="option">Grabs</a>
-                        <a href="?category=flips" class="option">Flips</a>
+                        <a href="?category=all"         class="option <?php echo isCategorySelected("all") ?>">         Alle</a>
+                        <a href="?category=grundlagen"  class="option <?php echo isCategorySelected("grundlagen") ?>">  Grundlagen</a>
+                        <a href="?category=rotationen"  class="option <?php echo isCategorySelected("rotationen") ?>">  Rotationen</a>
+                        <a href="?category=grabs"       class="option <?php echo isCategorySelected("grabs") ?>">       Grabs</a>
+                        <a href="?category=flips"       class="option <?php echo isCategorySelected("flips") ?>">       Flips</a>
                     </div>
                 </div>
 
@@ -94,10 +94,10 @@ require __DIR__ . '/../phpCode/tricks/generateTricksCard.php';
                 <div class="filter-trick">
                     <h3>Vorliebe</h3>
                     <div class="options">
-                        <a href="?preference=all" class="option option-selected ">Alle</a>
-                        <a href="?preference=allfavoriten" class="option">Favoriten</a>
-                        <a href="?preference=lernen" class="option">Lernen</a>
-                        <a href="?preference=gemeistert" class="option">Gemeistert</a>
+                        <a href="?preference=all"           class="option <?php echo isPreferenceSelected("all") ?> ">          Alle</a>
+                        <a href="?preference=favoriten"     class="option <?php echo isPreferenceSelected("favoriten") ?> ">    Favoriten</a>
+                        <a href="?preference=lernen"        class="option <?php echo isPreferenceSelected("lernen") ?> ">       Lernen</a>
+                        <a href="?preference=gemeistert"    class="option" <?php echo isPreferenceSelected("gemeistert") ?> >   Gemeistert</a>
                     </div>
                 </div>
             </div>
