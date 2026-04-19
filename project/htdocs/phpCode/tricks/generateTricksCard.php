@@ -30,7 +30,7 @@ function getTrickCard () {
                     <!--Info-->
                     <div class='card-info'>
                         <div class='text card-info-name'>$titel</div>
-                        <div class='text card-info-easy' style='color: $difficultyColor;'>$difficulty</div>
+                        <div class='text card-info-easy $difficultyColor'>$difficulty</div>
                         <div class='text card-info-categorie'>$category</div>
                         <div class='text'>$date</div>
                     </div>
@@ -86,12 +86,12 @@ function getDifficultyColor($name) {
 
     switch ($newName) {
         case 'anfänger':
-            return 'var(--color-tertiary-blue)';
-        case 'fortgeschritten':
+            return 'card-info-easy';
+        case 'card-info-advanced':
             return 'var(--color-secondary-blue)';
         case 'experte':
-            return 'var(--color-primary-blue)';
+            return 'card-info-hard';
         default:
-            return 'var(--color-tertiary-blue)';
+            return 'card-info-easy';
     }
 }

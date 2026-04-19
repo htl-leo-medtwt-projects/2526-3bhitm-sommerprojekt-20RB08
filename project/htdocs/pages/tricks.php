@@ -88,6 +88,7 @@ require __DIR__ . '/../phpCode/tricks/generateTricksCard.php';
                         <a href="?category=grundlagen"  class="option <?php echo isCategorySelected("grundlagen") ?>">  Grundlagen</a>
                         <a href="?category=rotationen"  class="option <?php echo isCategorySelected("rotationen") ?>">  Rotationen</a>
                         <a href="?category=grabs"       class="option <?php echo isCategorySelected("grabs") ?>">       Grabs</a>
+                        <a href="?category=jibbing"       class="option <?php echo isCategorySelected("jibbing") ?>">   Jibbing</a>
                         <a href="?category=flips"       class="option <?php echo isCategorySelected("flips") ?>">       Flips</a>
                     </div>
                 </div>

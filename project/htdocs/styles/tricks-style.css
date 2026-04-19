@@ -91,6 +91,7 @@
  /*** options ***/
  .options {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
  }
 
@@ -203,6 +204,13 @@
         gap: 10px;
         width: 60%;
     }
+
+     /***************************
+    * Card
+    **************************/
+    .card-trick{
+        width: 48%;
+    }
 }
 
 /********** Handy **********/
@@ -215,5 +223,12 @@
         flex-direction: column;
         gap: 10px;
         width: 100%;
+    }
+
+    /***************************
+    * Card
+    **************************/
+    .card-trick{
+        width: 95%;
     }
 }
