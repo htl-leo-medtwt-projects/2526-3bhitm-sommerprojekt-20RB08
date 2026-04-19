@@ -100,7 +100,7 @@ if ($isLoggedIn && $preference != 'all') {
     }
 } else if ($preference != 'all') {
     // muss sich einloggen
-    $preference == 'all'; # zu all sezten das man wieder zurück kommen kann
+    $_SESSION['filter']['preference'] = 'all'; # zu all sezten das man wieder zurück kommen kann
     header("Location: ./../pages/account.php");
     exit();
 }
