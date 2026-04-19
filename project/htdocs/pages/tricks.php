@@ -1,42 +1,10 @@
 <?php
 // session starten
 session_start();
-/******************
- *  FILTER
- *****************/
-if (!isset($_SESSION['filter'])) {
-    $_SESSION['filter'] = [
-        'search'        => '',
-        'difficulty'    => 'all',
-        'category'      => 'all',
-        'preference'    => 'all'
-    ];
-}
-// get?
-# search
-if (isset($_GET['search'])){
-    $_SESSION['filter']['search'] = $_GET['search'];
-}
-
-#schwierikeit
-if (isset($_GET['difficulty'])){
-    $_SESSION['filter']['difficulty'] = $_GET['difficulty'];
-}
-
-#kategorie
-if (isset($_GET['category'])){
-    $_SESSION['filter']['category'] = $_GET['category'];
-}
-
-#vorliebe
-if (isset($_GET['preference'])){
-    $_SESSION['filter']['preference'] = $_GET['preference'];
-}
-
-
 // imdfilepath
 $imgFilePath = "../img/";
 // requre
+require __DIR__ . '/../phpCode/tricks/filter.php';
 require __DIR__ . '/../phpCode/tricks/generateTricksCard.php';
 ?>
 <!DOCTYPE html>
@@ -138,47 +106,6 @@ require __DIR__ . '/../phpCode/tricks/generateTricksCard.php';
         <!--Card Tricks-->
         <div class="area" id="card-tricks">
             <!--Card-Trick-->
-            <a href="trickinformation.php" class="card-trick">
-                <!--Bild-->
-                <img src="../img/image.png" alt="curv" class="box-bigImg">
-                <!--Info-->
-                <div class="card-info">
-                    <div class="text card-info-name">Curven</div>
-                    <div class="text card-info-easy">Anfänger</div>
-                    <div class="text card-info-categorie">Grundlagen</div>
-                    <div class="text">4, Dez. 2025</div>
-                </div>
-
-                <!--Description-->
-                <div class="text card-description">
-                    Berschreibung, tricks für dennen die sowas lernen möchten
-                    Knuss aber wer sagt schmutz, keine ahnung was ich schreiben soll
-                </div>
-
-                <hr class="seperate">
-
-                <!--Status-->
-                <div class="card-status">
-                    <!--Favorite-->
-                    <div class="card-status-opt">
-                        <i class="fa-regular fa-star fa-sm"></i>
-                        Favorite
-                    </div>
-
-                    <!--Lernen-->
-                    <div class="card-status-opt">
-                        <i class="fa-regular fa-clock fa-sm"></i>
-                        Lernen
-                    </div>
-
-                     <!--Gemeistert-->
-                    <div class="card-status-opt">
-                        <i class="fa-solid fa-check fa-sm"></i>
-                        Gemeistert
-                    </div>
-                </div> 
-            </a>
-
             <?php echo getTrickCard() ?>
         </div>
 
