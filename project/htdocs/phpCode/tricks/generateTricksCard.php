@@ -12,6 +12,7 @@ function getTrickCard () {
     foreach($tricks as $trick) {
         // info
         $img = $imgFilePath . $trick['image_path'];
+        $id = $trick['id'];
         $titel = $trick['titel'];
         $difficulty = $trick['difficulty_name'];
         $category = $trick['category_name'];
@@ -22,7 +23,7 @@ function getTrickCard () {
 
         // einfügen
         $s .= "
-            <div class='card-trick'>
+            <a href='tutorial.php?trickId=$id' class='card-trick'>
                     <!--Bild-->
                     <img src='$img' alt='$titel' class='box-bigImg'>
                     <!--Info-->
@@ -67,7 +68,7 @@ function getTrickCard () {
                             Gemeistert
                         </div>
                     </div> 
-            </div>";
+            </a>";
 
         }
 

@@ -138,7 +138,7 @@ require __DIR__ . '/../phpCode/tricks/generateTricksCard.php';
         <!--Card Tricks-->
         <div class="area" id="card-tricks">
             <!--Card-Trick-->
-            <div class="card-trick">
+            <a href="trickinformation.php" class="card-trick">
                 <!--Bild-->
                 <img src="../img/image.png" alt="curv" class="box-bigImg">
                 <!--Info-->
@@ -177,7 +177,7 @@ require __DIR__ . '/../phpCode/tricks/generateTricksCard.php';
                         Gemeistert
                     </div>
                 </div> 
-            </div>
+            </a>
 
             <?php echo getTrickCard() ?>
         </div>
