@@ -28,7 +28,7 @@
             </div>
             <!--wege-->
             <a href="index.html" id="aktivePage">Home</a>
-            <a href="pages/tricks.php">Browse Tricks</a>
+            <a href="tricks.php?difficulty=all&&category=all&&preference=all&&search=" id="aktivePage">Browse Tricks</a>
         </div>
 
         <!--left-->
