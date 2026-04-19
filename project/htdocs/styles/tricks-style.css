@@ -114,6 +114,15 @@
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: var(--margin-bottom-small);
+
+    position: relative;
+    top: 0px;
+    animation: appear 0.5s ease-in-out;
+}
+
+@keyframes appear {
+    from{top: 20px; opacity: 0;}
+    to{top: 0px; opacity: 1;}
 }
 
 /***************************

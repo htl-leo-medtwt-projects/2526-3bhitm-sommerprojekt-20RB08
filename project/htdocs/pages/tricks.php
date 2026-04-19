@@ -22,6 +22,8 @@ require __DIR__ . '/../phpCode/tricks/generateTricksCard.php';
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/29a9c6b8a3.js" crossorigin="anonymous"></script>
 
+    <!-- Script -->
+     <script src="../scripts/tricks/search.js" defer></script>
 </head>
 
 <body>
@@ -60,7 +62,7 @@ require __DIR__ . '/../phpCode/tricks/generateTricksCard.php';
                <div id="filter-search">
                     <div class="search-box">
                         <i class="fa-solid fa-magnifying-glass"></i>
-                        <input placeholder="Suche nach Tricks" type="text" name="text" class="input">
+                        <input id="searchInput" placeholder="Suche nach Tricks" type="text" name="text" class="input" value="<?php echo $_SESSION['filter']['search'] ?? '' ?>">
                     </div>
                 </div>
             </div>
