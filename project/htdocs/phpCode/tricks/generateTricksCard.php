@@ -1,7 +1,4 @@
 <?php
-// session starten
-session_start();
-
 // daten trick holen
 require __DIR__ . '/tricks-data.php';
 

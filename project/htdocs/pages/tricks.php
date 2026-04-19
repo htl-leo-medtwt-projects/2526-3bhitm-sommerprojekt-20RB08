@@ -1,4 +1,39 @@
 <?php
+// session starten
+session_start();
+/******************
+ *  FILTER
+ *****************/
+if (!isset($_SESSION['filter'])) {
+    $_SESSION['filter'] = [
+        'search'        => '',
+        'difficulty'    => 'all',
+        'category'      => 'all',
+        'preference'    => 'all'
+    ];
+}
+// get?
+# search
+if (isset($_GET['search'])){
+    $_SESSION['filter']['search'] = $_GET['search'];
+}
+
+#schwierikeit
+if (isset($_GET['difficulty'])){
+    $_SESSION['filter']['difficulty'] = $_GET['difficulty'];
+}
+
+#kategorie
+if (isset($_GET['category'])){
+    $_SESSION['filter']['category'] = $_GET['category'];
+}
+
+#vorliebe
+if (isset($_GET['preference'])){
+    $_SESSION['filter']['preference'] = $_GET['preference'];
+}
+
+
 // imdfilepath
 $imgFilePath = "../img/";
 // requre
@@ -68,10 +103,10 @@ require __DIR__ . '/../phpCode/tricks/generateTricksCard.php';
                 <div class="filter-trick">
                     <h3>Schwierigkeit</h3>
                     <div class="options">
-                        <a href="#" class="option option-selected ">Alle</a>
-                        <a href="#" class="option">Anfänger</a>
-                        <a href="#" class="option">Fortgeschritten</a>
-                        <a href="#" class="option">Experte</a>
+                        <a href="?difficulty=all" class="option option-selected ">Alle</a>
+                        <a href="?difficulty=anfänger" class="option">Anfänger</a>
+                        <a href="?difficulty=fortgeschritten" class="option">Fortgeschritten</a>
+                        <a href="?difficulty=experte" class="option">Experte</a>
                     </div>
                 </div>
 
@@ -79,11 +114,11 @@ require __DIR__ . '/../phpCode/tricks/generateTricksCard.php';
                 <div class="filter-trick">
                     <h3>Kategorie</h3>
                     <div class="options">
-                        <a href="#" class="option option-selected ">Alle</a>
-                        <a href="#" class="option">Grundlagen</a>
-                        <a href="#" class="option">Rotationen</a>
-                        <a href="#" class="option">Grabs</a>
-                        <a href="#" class="option">Flips</a>
+                        <a href="?category=all" class="option option-selected ">Alle</a>
+                        <a href="?category=grundlagen" class="option">Grundlagen</a>
+                        <a href="?category=rotationen" class="option">Rotationen</a>
+                        <a href="?category=grabs" class="option">Grabs</a>
+                        <a href="?category=flips" class="option">Flips</a>
                     </div>
                 </div>
 
@@ -91,10 +126,10 @@ require __DIR__ . '/../phpCode/tricks/generateTricksCard.php';
                 <div class="filter-trick">
                     <h3>Vorliebe</h3>
                     <div class="options">
-                        <a href="#" class="option option-selected ">Alle</a>
-                        <a href="#" class="option">Favoriten</a>
-                        <a href="#" class="option">Lernen</a>
-                        <a href="#" class="option">Gemeistert</a>
+                        <a href="?preference=all" class="option option-selected ">Alle</a>
+                        <a href="?preference=allfavoriten" class="option">Favoriten</a>
+                        <a href="?preference=lernen" class="option">Lernen</a>
+                        <a href="?preference=gemeistert" class="option">Gemeistert</a>
                     </div>
                 </div>
             </div>

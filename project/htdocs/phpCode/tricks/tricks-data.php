@@ -10,15 +10,15 @@ $allowed_category   = ['all', 'grundlagen', 'rotationen', 'grabs', 'jibbing', 'f
 $allowed_preference = ['all', 'favoriten', 'lernen', 'gemeistert'];
 
 // Filter – ungültige Werte werden auf 'all' zurückgesetzt
-$search     = substr(trim($_GET['search'] ?? ''), 0, 100);
+$search     = substr(trim($_SESSION['filter']['search'] ?? ''), 0, 100);
 
-$difficulty_raw = strtolower(trim($_GET['difficulty'] ?? 'all'));
+$difficulty_raw = strtolower(trim($_SESSION['filter']['difficulty'] ?? 'all'));
 $difficulty = in_array($difficulty_raw, $allowed_difficulty) ? $difficulty_raw : 'all';
 
-$category_raw = strtolower(trim($_GET['category'] ?? 'all'));
+$category_raw = strtolower(trim($_SESSION['filter']['category'] ?? 'all'));
 $category = in_array($category_raw, $allowed_category) ? $category_raw : 'all';
 
-$preference_raw = strtolower(trim($_GET['preference'] ?? 'all'));
+$preference_raw = strtolower(trim($_SESSION['filter']['preference'] ?? 'all'));
 $preference = in_array($preference_raw, $allowed_preference) ? $preference_raw : 'all';
 
 $params = [];
