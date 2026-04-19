@@ -37,7 +37,7 @@ require __DIR__ . '/../phpCode/tricks/generateTricksCard.php';
             </div>
             <!--wege-->
             <a href="../index.php">Home</a>
-            <a href="tricks.php?difficulty=all&&category=all&&preference=all&&search=" id="aktivePage">Browse Tricks</a>
+            <a href="tricks.php?difficulty=all&category=all&preference=all&search=" id="aktivePage">Browse Tricks</a>
         </div>
 
         <!--left-->
@@ -99,7 +99,7 @@ require __DIR__ . '/../phpCode/tricks/generateTricksCard.php';
                         <a href="?preference=all"           class="option <?php echo isPreferenceSelected("all") ?> ">          Alle</a>
                         <a href="?preference=favoriten"     class="option <?php echo isPreferenceSelected("favoriten") ?> ">    Favoriten</a>
                         <a href="?preference=lernen"        class="option <?php echo isPreferenceSelected("lernen") ?> ">       Lernen</a>
-                        <a href="?preference=gemeistert"    class="option" <?php echo isPreferenceSelected("gemeistert") ?> >   Gemeistert</a>
+                        <a href="?preference=gemeistert"    class="option <?php echo isPreferenceSelected("gemeistert") ?>" >   Gemeistert</a>
                     </div>
                 </div>
             </div>

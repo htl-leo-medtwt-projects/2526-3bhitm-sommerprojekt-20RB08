@@ -30,7 +30,6 @@ $isLoggedIn = isset($_SESSION["login"]) && $_SESSION["login"];
 // NICHT eingeloggt: einfache Abfrage ohne User-Daten
 // -------------------------------------------------------
 if (!$isLoggedIn) {
-    $preference = 'all'; // Vorliebe-Filter hat ohne Login keinen Sinn
 
     $sql = "SELECT t.id, t.titel, t.description, t.created_at, t.image_path,
                    d.name AS difficulty_name,
@@ -99,6 +98,11 @@ if ($isLoggedIn && $preference != 'all') {
         $params[] = $preference;
         $types   .= "s";
     }
+} else if ($preference != 'all') {
+    // muss sich einloggen
+    $preference == 'all'; # zu all sezten das man wieder zurück kommen kann
+    header("Location: ./../pages/account.php");
+    exit();
 }
 
 // -------------------------------------------------------
