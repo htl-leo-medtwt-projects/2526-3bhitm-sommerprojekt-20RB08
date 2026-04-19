@@ -15,6 +15,7 @@ function getTrickCard () {
         $id = $trick['id'];
         $titel = $trick['titel'];
         $difficulty = $trick['difficulty_name'];
+        $difficultyColor = getDifficultyColor($difficulty);
         $category = $trick['category_name'];
         $date = date('j. M. Y', strtotime($trick['created_at'])); // <-- Claude
         // beschreibung
@@ -29,7 +30,7 @@ function getTrickCard () {
                     <!--Info-->
                     <div class='card-info'>
                         <div class='text card-info-name'>$titel</div>
-                        <div class='text card-info-easy'>$difficulty</div>
+                        <div class='text card-info-easy' style='color: $difficultyColor;'>$difficulty</div>
                         <div class='text card-info-categorie'>$category</div>
                         <div class='text'>$date</div>
                     </div>
@@ -75,4 +76,22 @@ function getTrickCard () {
     }
    
     return $s;
+}
+
+/***********************
+ * getDifficultyColor
+ ***+******************/
+function getDifficultyColor($name) {
+    $newName = strtolower(trim($name));
+
+    switch ($newName) {
+        case 'anfänger':
+            return 'var(--color-tertiary-blue)';
+        case 'fortgeschritten':
+            return 'var(--color-secondary-blue)';
+        case 'experte':
+            return 'var(--color-primary-blue)';
+        default:
+            return 'var(--color-tertiary-blue)';
+    }
 }
