@@ -275,6 +275,7 @@ h3 {
     object-fit: cover;
     background: lightgray;
     border-radius: var(--border-radius);
+    overflow: hidden;
 }
 
 /***** text *****/

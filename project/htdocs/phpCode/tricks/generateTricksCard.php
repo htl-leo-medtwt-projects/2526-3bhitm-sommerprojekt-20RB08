@@ -26,7 +26,9 @@ function getTrickCard () {
         $s .= "
             <a href='tutorial.php?trickId=$id' class='card-trick'>
                     <!--Bild-->
-                    <img src='$img' alt='$titel' class='box-bigImg'>
+                    <div class='img-wrapper box-bigImg'>
+                        <img src='$img' alt='$titel' class='card-img'>
+                    </div>
                     <!--Info-->
                     <div class='card-info'>
                         <div class='text card-info-name'>$titel</div>
