@@ -33,7 +33,7 @@
 /***************************
  * detail
  **************************/
-#detail{
+#detail {
     padding: 0 20%;
 
     display: flex;
@@ -53,7 +53,7 @@
     gap: 10px;
 }
 
-.step sub{
+.step sub {
     font-weight: bold;
     color: var(--color-primary-blue);
 }
@@ -61,38 +61,40 @@
 /***************************
  * feed
  **************************/
-#feed{
+#feed {
     margin-bottom: var(--margin-bottom-small);
 }
 
 /***** info *****/
-.info{
+.info {
     display: flex;
     flex-direction: column;
     gap: var(--border-radius);
 
-    margin-bottom: var( --margin-bottom-small);
+    margin-bottom: var(--margin-bottom-small);
 }
 
 /***** cards *****/
-#cards{
+#cards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 /*** card ***/
 .card {
     width: 32%;
+    margin: 0 auto;
 }
 
-.card-info{
+.card-info {
     padding: 0 var(--border-radius);
 
     display: flex;
     justify-content: space-between;
 }
 
-.card-name{
+.card-name {
     font-weight: bold;
     color: var(--color-black);
 }
@@ -101,7 +103,15 @@
  * Responsive
  ********************************************************************************************************************************/
 /********** Tablet **********/
-@media (max-width: 1199px) {}
+@media (max-width: 1199px) {
+
+    /***************************
+    * detail
+    **************************/
+    #detail {
+        padding: 0 10%;
+    }
+}
 
 /********** Handy **********/
 @media (max-width: 809px) {
@@ -116,4 +126,22 @@
         gap: 5px;
     }
 
+    /***************************
+    * detail
+    **************************/
+    #detail {
+        padding: 0 5%;
+    }
+
+    /***************************
+    * feed
+    **************************/
+    /***** cards *****/
+    #cards { 
+        gap: 30px;
+    }
+    /*** card ***/
+    .card {
+        width: 90%;
+    }
 }
