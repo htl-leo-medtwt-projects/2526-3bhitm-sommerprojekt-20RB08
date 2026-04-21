@@ -77,6 +77,37 @@
 
         </div>
 
+        <!--Detail-->
+        <div class="area" id="detail">
+            <!--Beschreibung -->
+            <div class="text">
+                Berschreibung, tricks für dennen die sowas lernen möchten
+                Knuss aber wer sagt schmutz, keine ahnung was ich schreiben soll
+            </div>
+
+            <!--Hot to-->
+            <h3>How to Name des Tricks</h3>
+
+            <!--Steps-->
+            <div id="steps">
+                <!--Step-->
+                <div class="step">
+                    <sub>01</sub>
+                    <div class="text">Schirt 1 wird hier beschrieben, Schirt 1 wird hier beschrieben Schirt 1 wird hier beschrieben Schirt 1 wird hier beschrieben</div>
+                </div>
+                <!--Step-->
+                <div class="step">
+                    <sub>02</sub>
+                    <div class="text">Schirt 2 wird hier beschrieben</div>
+                </div>
+                <!--Step-->
+                <div class="step">
+                    <sub>03</sub>
+                    <div class="text">Schirt 4 wird hier beschrieben</div>
+                </div>
+            </div>
+        </div>
+
         <!--Footer-->
         <div id="footer">
             <hr class="seperate-s">
