@@ -90,7 +90,7 @@ function getDifficultyColor($name) {
         case 'anfänger':
             return 'card-info-easy';
         case 'card-info-advanced':
-            return 'var(--color-secondary-blue)';
+            return 'card-info-advanced';
         case 'experte':
             return 'card-info-hard';
         default:

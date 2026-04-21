@@ -58,6 +58,42 @@
     color: var(--color-primary-blue);
 }
 
+/***************************
+ * feed
+ **************************/
+
+/***** info *****/
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: var(--border-radius);
+
+    margin-bottom: var( --margin-bottom-small);
+}
+
+/***** cards *****/
+#cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*** card ***/
+.card {
+    width: 32%;
+}
+
+.card-info{
+    padding: 0 var(--border-radius);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-name{
+    font-weight: bold;
+    color: var(--color-black);
+}
+
 /*********************************************************************************************************************************
  * Responsive
  ********************************************************************************************************************************/

@@ -117,6 +117,45 @@
             </div>
         </div>
 
+        <hr class="seperate-s">
+
+        <!--Weitere tricks-->
+        <div class="area" id="feed">
+            <!--info-->
+            <div class="info">
+                <h3>Schaue nach Neuen Tricks</h3>
+                <div class="text">Durchsuche die besten Trick zum level up</div>
+            </div>
+
+            <!--mini-cards-->
+            <div id="cards">
+                <!--Card-->
+                <a class="card">
+                    <img src="../img/holder.png" alt="holder" class="box-bigImg">
+                    <div class="card-info">
+                        <div class="text card-name"> Name Trick</div>
+                        <div class="text card-info-easy">Schwirigketi</div>
+                    </div>
+                </a>
+                <!--Card-->
+                <a class="card">
+                    <img src="../img/holder.png" alt="holder" class="box-bigImg">
+                    <div class="card-info">
+                        <div class="text card-name"> Name Trick</div>
+                        <div class="text card-info-easy">Schwirigketi</div>
+                    </div>
+                </a>
+                <!--Card-->
+                <a class="card">
+                    <img src="../img/holder.png" alt="holder" class="box-bigImg">
+                    <div class="card-info">
+                        <div class="text card-name"> Name Trick</div>
+                        <div class="text card-info-easy">Schwirigketi</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
         <!--Footer-->
         <div id="footer">
             <hr class="seperate-s">

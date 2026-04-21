@@ -328,6 +328,25 @@ h3 {
     font-weight: bold;
 }
 
+/*********************************
+ * card trick schwierigkeit
+ ********************************/
+/* schwierigkeiten*/
+.card-info-easy {
+    font-weight: bold;
+    color: var(--color-tertiary-blue);
+}
+
+.card-info-advanced {
+    font-weight: bold;
+    color: var(--color-secondary-blue);
+}
+
+.card-info-hard {
+    font-weight: bold;
+    color: var(--color-primary-blue);
+}
+
 
 /*********************************************************************************************************************************
  * Responsive
