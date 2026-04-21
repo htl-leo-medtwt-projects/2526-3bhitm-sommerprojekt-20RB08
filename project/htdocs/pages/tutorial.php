@@ -89,7 +89,7 @@
             <h3>How to Name des Tricks</h3>
 
             <!--Steps-->
-            <div id="steps">
+            <div class="steps">
                 <!--Step-->
                 <div class="step">
                     <sub>01</sub>
@@ -105,6 +105,15 @@
                     <sub>03</sub>
                     <div class="text">Schirt 4 wird hier beschrieben</div>
                 </div>
+            </div>
+
+            <!--Tutorial img-->
+            <img src="../img/tutorial/ollie.png" alt="ollie">
+
+            <!--Tip-->
+            <h3>Tip</h3>
+            <div class="steps">
+                <div class="text">Hierr würde ein tip stehen für die Neugierigen snowboarder</div>
             </div>
         </div>
 
