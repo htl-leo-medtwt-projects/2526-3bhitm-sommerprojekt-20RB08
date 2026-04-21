@@ -61,6 +61,9 @@
 /***************************
  * feed
  **************************/
+#feed{
+    margin-bottom: var(--margin-bottom-small);
+}
 
 /***** info *****/
 .info{

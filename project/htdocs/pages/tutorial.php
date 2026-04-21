@@ -120,7 +120,7 @@
         <hr class="seperate-s">
 
         <!--Weitere tricks-->
-        <div class="area" id="feed">
+        <div id="feed">
             <!--info-->
             <div class="info">
                 <h3>Schaue nach Neuen Tricks</h3>
