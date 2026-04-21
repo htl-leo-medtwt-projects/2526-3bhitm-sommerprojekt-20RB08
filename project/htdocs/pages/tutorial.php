@@ -13,7 +13,6 @@
     <script src="https://kit.fontawesome.com/29a9c6b8a3.js" crossorigin="anonymous"></script>
 
     <!-- Script -->
-     <script src="../scripts/tricks/search.js" defer></script>
 </head>
 <body>
     <!--Nav-->
