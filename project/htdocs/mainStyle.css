@@ -61,6 +61,7 @@
     /*** margins ***/
     --margin-bottom: 100px;
     --margin-bottom-small: 50px;
+    --margin-bottom-mid: 80px;
 }
 
 * {
@@ -119,6 +120,12 @@ h3 {
 }
 
 /*** seperater ***/
+.seperate {
+    stroke: 2px;
+    color: var(--color-gray) !important;
+    text-decoration: none;
+}
+
 .seperate-s {
     stroke: 2px;
     margin-bottom: 50px;

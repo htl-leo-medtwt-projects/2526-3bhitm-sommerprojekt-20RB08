@@ -28,7 +28,7 @@
             </div>
             <!--wege-->
             <a href="index.html" id="aktivePage">Home</a>
-            <a href="tricks.php?difficulty=all&&category=all&&preference=all&&search=" id="aktivePage">Browse Tricks</a>
+            <a href="pages/tricks.php?difficulty=all&category=all&preference=all&search=" id="aktivePage">Browse Tricks</a>
         </div>
 
         <!--left-->
@@ -44,7 +44,7 @@
             <!--Header Animationen-->
             <div class="area" id="header">
                 <div id="headerAni">
-                    Snowboard Triks.
+                    Snowboard Tricks.
                     <!--slang-->
                     <div id="slangs">
                         <div id="slang">
