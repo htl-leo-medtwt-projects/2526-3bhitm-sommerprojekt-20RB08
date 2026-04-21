@@ -54,6 +54,7 @@
 }
 
 .step sub {
+    min-width: 20px;
     font-weight: bold;
     color: var(--color-primary-blue);
 }
@@ -130,7 +131,7 @@
     * detail
     **************************/
     #detail {
-        padding: 0 5%;
+        padding: 0 2%;
     }
 
     /***************************
@@ -142,6 +143,6 @@
     }
     /*** card ***/
     .card {
-        width: 90%;
+        width: 95%;
     }
 }
