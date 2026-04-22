@@ -14,51 +14,88 @@ function getOverview() {
         return;
     }
 
+    #trick
+    $trick = getTrick($trickId);
+    $titel = $trick['titel'];
+    $date = date('j. M. Y', strtotime($trick['created_at']));
+    $img = $trick['image_path'];
+
+    # string
+    $s = "
+            <!--overview-->
+            <div class='area' id='overview'>
+                <!--Header-->
+                <div id='header'>
+                    <h1>$titel</h1>
+                    <div class='text'>$date</div>
+                </div>
+
+                <!--Big img-->
+                <img src='../img/$img' alt='curv' class='box-bigImg'>
+    ";
+
      // ist angemeldet
     if (isset($_SESSION['login']) && $_SESSION['login']) {
 
     } else {
         // nicht angemeldet
-        var_dump(getTrick($trickId));
+       
+        #eigenschaften
+        
+        $s .= 
+        "
+                <!--trick bar-->
+                <div id='trick-bar'>
+                    <!--Status-->
+                    <div class='status'>
+                        <!--Favorite-->
+                        <a href='#' class='status-opt'>
+                            <i class='fa-regular fa-star fa-sm'></i>
+                            Favorite
+                        </a>
+
+                        <!--Lernen-->
+                        <a href='#' class='status-opt'>
+                            <i class='fa-regular fa-clock fa-sm'></i>
+                            Lernen
+                        </a>
+
+                        <!--Gemeistert-->
+                        <a  href='#'class='status-opt'>
+                            <i class='fa-solid fa-check fa-sm'></i>
+                            Gemeistert
+                        </a>
+                    </div>           
+        ";
     }
+
+    # schwierigkeit + ende
+    $difficultyName = $trick['difficulty_name'];
+    $difficultyClass = getDifficultyColor($trick['difficulty_name']);
+    $s .= "
+                <!--Schwirigkeit-->
+                <div class='text $difficultyClass'>$difficultyName</div>
+            </div>
+        </div>
+    ";
+
+    return $s;
 }
 
-"
-        <!--overview-->
-        <div class='area' id='overview'>
-            <!--Header-->
-            <div id='header'>
-                <h1>Ollie</h1>
-                <div class='text'>12. Jul. 2024</div>
-            </div>
+/***********************
+ * getDifficultyColor
+ ***+******************/
+function getDifficultyColor($name) {
+    $newName = strtolower(trim($name));
 
-            <!--Big img-->
-            <img src='../img/image.png' alt='curv' class='box-bigImg'>
-
-            <!--trick bar-->
-            <div id='trick-bar'>
-                <!--Status-->
-                <div class='status'>
-                    <!--Favorite-->
-                    <a href='#' class='status-opt'>
-                        <i class='fa-regular fa-star fa-sm'></i>
-                        Favorite
-                    </a>
-
-                    <!--Lernen-->
-                    <a href='#' class='status-opt'>
-                        <i class='fa-regular fa-clock fa-sm'></i>
-                        Lernen
-                    </a>
-
-                    <!--Gemeistert-->
-                    <a  href='#'class='status-opt'>
-                        <i class='fa-solid fa-check fa-sm'></i>
-                        Gemeistert
-                    </a>
-                </div>
-
-                <!--Schwirigkeit-->
-                <div class='text'>Schwierigkeit</div>
-            </div>
-";
+    switch ($newName) {
+        case 'anfänger':
+            return 'card-info-easy';
+        case 'card-info-advanced':
+            return 'card-info-advanced';
+        case 'experte':
+            return 'card-info-hard';
+        default:
+            return 'card-info-easy';
+    }
+}

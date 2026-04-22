@@ -12,15 +12,20 @@ $trickIdStr = (isset($_GET['trickId'])) ? $_GET['trickId'] : -1;
 $trick = getTrick($trickIdStr);
 
 if (!empty($trick)){
-    $trickId = $trick[0]['id'];
+    $trickId = $trick['id'];
 }
 
 // get trick
 function getTrick($strId) {
     global $conn;
     // sql vorbereiten
-    $sql = "SELECT * FROM `trick` 
-            WHERE id = ?";
+    $sql = "SELECT t.id, t.titel, t.created_at, t.description, t.image_path, t.tip, 
+            d.name as difficulty_name,
+            c.name as category_name
+            FROM `trick` t
+            join difficulty d on (t.difficulty = d.id)
+            join category c on (t.category = c.id)
+            WHERE t.id = ?";
 
     // query ausführen
     $stmt = $conn->prepare($sql);
@@ -28,6 +33,6 @@ function getTrick($strId) {
     $stmt->execute();
     $result = $stmt->get_result();
 
-    $trick = mysqli_fetch_all($result, MYSQLI_ASSOC);
-    return $trick;
+    $trick = mysqli_fetch_all($result, MYSQLI_ASSOC);;
+    return $trick[0];
 }
