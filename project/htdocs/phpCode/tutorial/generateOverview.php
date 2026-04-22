@@ -49,19 +49,19 @@ function getOverview() {
                     <!--Status-->
                     <div class='status'>
                         <!--Favorite-->
-                        <a href='#' class='status-opt'>
+                        <a href='./account.php' class='status-opt'>
                             <i class='fa-regular fa-star fa-sm'></i>
                             Favorite
                         </a>
 
                         <!--Lernen-->
-                        <a href='#' class='status-opt'>
+                        <a href='./account.php' class='status-opt'>
                             <i class='fa-regular fa-clock fa-sm'></i>
                             Lernen
                         </a>
 
                         <!--Gemeistert-->
-                        <a  href='#'class='status-opt'>
+                        <a  href='./account.php'class='status-opt'>
                             <i class='fa-solid fa-check fa-sm'></i>
                             Gemeistert
                         </a>

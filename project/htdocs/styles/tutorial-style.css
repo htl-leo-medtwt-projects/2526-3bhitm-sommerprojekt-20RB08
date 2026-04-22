@@ -28,6 +28,16 @@
 .status-opt {
     text-decoration: none;
     color: var(--color-gray);
+
+    transition: all 0.15s;
+}
+
+.status-opt:hover{
+    transform: scale(1.1);
+}
+
+.status-opt:active{
+    transform: scale(0.9);
 }
 
 /***************************
