@@ -22,16 +22,14 @@ function getOverview() {
 
     # string
     $s = "
-            <!--overview-->
-            <div class='area' id='overview'>
-                <!--Header-->
-                <div id='header'>
-                    <h1>$titel</h1>
-                    <div class='text'>$date</div>
-                </div>
+            <!--Header-->
+            <div id='header'>
+                <h1>$titel</h1>
+                <div class='text'>$date</div>
+            </div>
 
-                <!--Big img-->
-                <img src='../img/$img' alt='curv' class='box-bigImg'>
+            <!--Big img-->
+            <img src='../img/$img' alt='curv' class='box-bigImg'>
     ";
 
      // ist angemeldet
@@ -73,18 +71,15 @@ function getOverview() {
     $difficultyName = $trick['difficulty_name'];
     $difficultyClass = getDifficultyColor($trick['difficulty_name']);
     $s .= "
-                <!--Schwirigkeit-->
-                <div class='text $difficultyClass'>$difficultyName</div>
-            </div>
+            <!--Schwirigkeit-->
+            <div class='text $difficultyClass'>$difficultyName</div>
         </div>
     ";
 
     return $s;
 }
 
-/***********************
- * getDifficultyColor
- ***+******************/
+/*** getDifficultyColor ***/
 function getDifficultyColor($name) {
     $newName = strtolower(trim($name));
 
@@ -99,3 +94,7 @@ function getDifficultyColor($name) {
             return 'card-info-easy';
     }
 }
+
+/***************************
+ * generate Overview
+ *************************/

@@ -5,7 +5,7 @@ session_start();
 require  __DIR__ . '/../phpCode/tutorial/trickId.php';
 
 // require
-require __DIR__ . '/../phpCode/tutorial/generateOverview.php';
+require __DIR__ . '/../phpCode/tutorial/generateTutorial.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -47,7 +47,9 @@ require __DIR__ . '/../phpCode/tutorial/generateOverview.php';
     <!--container-->
     <div id="container">
         <!--overview-->
-        <?php echo getOverview() ?>
+        <div class='area' id='overview'>
+            <?php echo getOverview() ?>
+        </div>
 
         <!--Detail-->
         <div class="area" id="detail">
