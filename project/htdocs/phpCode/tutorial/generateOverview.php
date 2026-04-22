@@ -6,7 +6,21 @@ require_once __DIR__ . '/../../datenBank/mysqlConnection.php';
  * generate Overview
  *************************/
 function getOverview() {
-    
+    global $trickId;
+    // fehler der id
+    if ($trickId == -1) {
+        echo $trickId;
+        echo "FEHLER!";
+        return;
+    }
+
+     // ist angemeldet
+    if (isset($_SESSION['login']) && $_SESSION['login']) {
+
+    } else {
+        // nicht angemeldet
+        var_dump(getTrick($trickId));
+    }
 }
 
 "
