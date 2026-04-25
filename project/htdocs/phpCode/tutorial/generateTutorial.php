@@ -109,10 +109,37 @@ function getDetail() {
 
     #trick
     $trick = getTrick($trickId);
+    $titel = $trick['titel'];
     $description = $trick['description'];
     $tutorialImg = $trick['tutorial_path'];
     $tip = $trick['tip'];
+
+    # beschreibung
+    $s = "
+        <div class='text'>
+            $description
+        </div>
+    ";
+
+    # how to
+
+    # tutorial img
+    $s .= "
+        <!--Tutorial img-->
+        <img src='../img/$tutorialImg' alt='$titel tutorial'>
+    ";
+
+    # tip
+    $s .= "
+        <!--Tip-->
+        <h3>Tip:</h3>
+        <div class='steps'>
+            <div class='text'>$tip</div>
+        </div>
+    ";
     
+    # return
+    return $s;
 }
 
 /**** getSteps ****/
@@ -123,9 +150,7 @@ function getSteps() {
 }
 "
             
-<div class='text'>
-                Bla Bla Bla Bla
-            </div>
+
 
             <h3>How to Name von trick</h3>
                 <!--Steps-->
@@ -147,12 +172,7 @@ function getSteps() {
                     </div>
                 </div>
 
-                <!--Tutorial img-->
-                <img src='../img/tutorial/ollie.png' alt='ollie'>
+               
 
-                <!--Tip-->
-                <h3>Tip</h3>
-                <div class='steps'>
-                    <div class='text'>Hierr würde ein tip stehen für die Neugierigen snowboarder</div>
-                </div>
+                
 ";
