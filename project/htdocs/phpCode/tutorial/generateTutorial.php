@@ -122,6 +122,7 @@ function getDetail() {
     ";
 
     # how to
+    $s .= getSteps();
 
     # tutorial img
     $s .= "
@@ -145,8 +146,20 @@ function getDetail() {
 /**** getSteps ****/
 function getSteps() {
     global $trickId;
+    global $conn;
 
-   
+    // get steps from database 
+    $stmt = $conn->prepare("SELECT * FROM step
+                           WHERE trick = ?
+                           order by step_number");
+    $stmt->bind_param("i", $trickId);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    // convert result to array
+    $steps = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+    var_dump($steps);
 }
 "
             
