@@ -6,6 +6,8 @@ require  __DIR__ . '/../phpCode/tutorial/trickId.php';
 
 // require
 require __DIR__ . '/../phpCode/tutorial/generateTutorial.php';
+
+require __DIR__ . '/../phpCode/tutorial/randomTricks.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -68,30 +70,7 @@ require __DIR__ . '/../phpCode/tutorial/generateTutorial.php';
 
             <!--mini-cards-->
             <div id="cards">
-                <!--Card-->
-                <a class="card">
-                    <img src="../img/holder.png" alt="holder" class="box-bigImg">
-                    <div class="card-info">
-                        <div class="text card-name"> Name Trick</div>
-                        <div class="text card-info-easy">Schwirigketi</div>
-                    </div>
-                </a>
-                <!--Card-->
-                <a class="card">
-                    <img src="../img/holder.png" alt="holder" class="box-bigImg">
-                    <div class="card-info">
-                        <div class="text card-name"> Name Trick</div>
-                        <div class="text card-info-easy">Schwirigketi</div>
-                    </div>
-                </a>
-                <!--Card-->
-                <a class="card">
-                    <img src="../img/holder.png" alt="holder" class="box-bigImg">
-                    <div class="card-info">
-                        <div class="text card-name"> Name Trick</div>
-                        <div class="text card-info-easy">Schwirigketi</div>
-                    </div>
-                </a>
+                <?php echo getMiniCards() ?>
             </div>
         </div>
 

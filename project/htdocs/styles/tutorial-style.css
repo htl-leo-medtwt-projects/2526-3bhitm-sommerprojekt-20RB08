@@ -96,6 +96,7 @@
 .card {
     width: 32%;
     margin: 0 auto;
+    text-decoration: none;
 }
 
 .card-info {
