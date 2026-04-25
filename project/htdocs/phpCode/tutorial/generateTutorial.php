@@ -122,7 +122,25 @@ function getDetail() {
     ";
 
     # how to
-    $s .= getSteps();
+    $steps = getSteps();
+    $s .= "<h3>How to $titel:</h3>
+           <!--Steps-->
+           <div class='steps'>";
+
+    foreach($steps as $step) {
+        $stepNr = sprintf('%02d', $step['step_number']);
+        $text = $step['text'];
+
+        $s .= "
+            <!--Step-->
+            <div class='step'>
+                <sub>$stepNr</sub>
+                <div class='text'>$text</div>
+            </div>
+        ";
+    }
+
+    $s .= "</div>";
 
     # tutorial img
     $s .= "
@@ -159,33 +177,5 @@ function getSteps() {
     // convert result to array
     $steps = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
-    var_dump($steps);
+    return $steps;
 }
-"
-            
-
-
-            <h3>How to Name von trick</h3>
-                <!--Steps-->
-                <div class='steps'>
-                    <!--Step-->
-                    <div class='step'>
-                        <sub>01</sub>
-                        <div class='text'>Schirt 1 wird hier beschrieben, Schirt 1 wird hier beschrieben Schirt 1 wird hier beschrieben Schirt 1 wird hier beschrieben</div>
-                    </div>
-                    <!--Step-->
-                    <div class='step'>
-                        <sub>02</sub>
-                        <div class='text'>Schirt 2 wird hier beschrieben</div>
-                    </div>
-                    <!--Step-->
-                    <div class='step'>
-                        <sub>03</sub>
-                        <div class='text'>Schirt 4 wird hier beschrieben</div>
-                    </div>
-                </div>
-
-               
-
-                
-";
