@@ -19,7 +19,7 @@ if (!empty($trick)){
 function getTrick($strId) {
     global $conn;
     // sql vorbereiten
-    $sql = "SELECT t.id, t.titel, t.created_at, t.description, t.image_path, t.tip, 
+    $sql = "SELECT t.id, t.titel, t.created_at, t.description, t.image_path, t.tip, t.tip, t.tutorial_path,
             d.name as difficulty_name,
             c.name as category_name
             FROM `trick` t

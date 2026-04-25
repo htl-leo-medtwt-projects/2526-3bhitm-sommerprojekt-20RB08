@@ -96,5 +96,63 @@ function getDifficultyColor($name) {
 }
 
 /***************************
- * generate Overview
+ * get detail
  *************************/
+function getDetail() {
+    global $trickId;
+    // fehler der id
+    if ($trickId == -1) {
+        echo $trickId;
+        echo "FEHLER!";
+        return;
+    }
+
+    #trick
+    $trick = getTrick($trickId);
+    $description = $trick['description'];
+    $tutorialImg = $trick['tutorial_path'];
+    $tip = $trick['tip'];
+    
+}
+
+/**** getSteps ****/
+function getSteps() {
+    global $trickId;
+
+   
+}
+"
+            
+<div class='text'>
+                Bla Bla Bla Bla
+            </div>
+
+            <h3>How to Name von trick</h3>
+                <!--Steps-->
+                <div class='steps'>
+                    <!--Step-->
+                    <div class='step'>
+                        <sub>01</sub>
+                        <div class='text'>Schirt 1 wird hier beschrieben, Schirt 1 wird hier beschrieben Schirt 1 wird hier beschrieben Schirt 1 wird hier beschrieben</div>
+                    </div>
+                    <!--Step-->
+                    <div class='step'>
+                        <sub>02</sub>
+                        <div class='text'>Schirt 2 wird hier beschrieben</div>
+                    </div>
+                    <!--Step-->
+                    <div class='step'>
+                        <sub>03</sub>
+                        <div class='text'>Schirt 4 wird hier beschrieben</div>
+                    </div>
+                </div>
+
+                <!--Tutorial img-->
+                <img src='../img/tutorial/ollie.png' alt='ollie'>
+
+                <!--Tip-->
+                <h3>Tip</h3>
+                <div class='steps'>
+                    <div class='text'>Hierr würde ein tip stehen für die Neugierigen snowboarder</div>
+                </div>
+";
