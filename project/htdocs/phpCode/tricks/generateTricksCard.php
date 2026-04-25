@@ -32,7 +32,7 @@ function getTrickCard () {
                     <!--Info-->
                     <div class='card-info'>
                         <div class='text card-info-name'>$titel</div>
-                        <div class='text card-info-easy $difficultyColor'>$difficulty</div>
+                        <div class='text $difficultyColor'>$difficulty</div>
                         <div class='text card-info-categorie'>$category</div>
                         <div class='text'>$date</div>
                     </div>
@@ -89,7 +89,7 @@ function getDifficultyColor($name) {
     switch ($newName) {
         case 'anfänger':
             return 'card-info-easy';
-        case 'card-info-advanced':
+        case 'fortgeschritten':
             return 'card-info-advanced';
         case 'experte':
             return 'card-info-hard';

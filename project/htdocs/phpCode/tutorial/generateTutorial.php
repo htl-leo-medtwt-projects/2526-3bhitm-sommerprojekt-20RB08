@@ -29,7 +29,7 @@ function getOverview() {
             </div>
 
             <!--Big img-->
-            <img src='../img/$img' alt='curv' class='box-bigImg'>
+            <img src='../img/$img' onerror='../img/holder.png' class='box-bigImg'>
     ";
 
      // ist angemeldet

@@ -45,7 +45,7 @@ function getMiniCards() {
         $s .= "
                 <!--Card-->
                 <a href='?trickId=$id' class='card'>
-                    <img src='../img/$img' alt='$titel' class='box-bigImg'>
+                    <img src='../img/$img' onerror='../img/holder.png' class='box-bigImg'>
                     <div class='card-info'>
                         <div class='text card-name'>$titel</div>
                         <div class='text $difficultyClass'>$difficulty</div>
