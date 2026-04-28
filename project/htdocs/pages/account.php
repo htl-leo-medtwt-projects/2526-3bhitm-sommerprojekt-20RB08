@@ -21,27 +21,15 @@
     <div id="view">
         <!--Dark-->
         <div id="dark">
-        </div>
-
-        <!--Light-->
-        <div id="light">
-            <h4>Konto Erstellen</h4>
+            <!--Übershcrig-->
+            <h4>Anmelden</h4>
 
             <!--create acc-->
             <form action="">
                 <!--Email-->
                 <div class="field">
                     <div class="field-label">
-                        <span class="at">@</span>
-                        email Adresse
-                    </div>
-                    <input class="field-input" type="email" name="email" placeholder="mustermann@gmail.com" />
-                </div>
-
-                <!--Email-->
-                <div class="field">
-                    <div class="field-label">
-                        <span class="at">@</span>
+                        <i class="fa-regular fa-user"></i>
                         Benutzername
                     </div>
                     <input class="field-input" type="text" name="username" placeholder="YungHurn" />
@@ -50,7 +38,46 @@
                 <!--passwort-->
                 <div class="field">
                     <div class="field-label">
-                        <span class="at">@</span>
+                        <i class="fa-solid fa-key"></i>
+                        Passwort
+                    </div>
+                    <input class="field-input" type="password" name="password" />
+                </div>
+
+                <!--submit-->
+                <input type="submit" value="Anmelden" class="button">
+            </form>
+        </div>
+
+        <!--Light-->
+        <div id="light">
+            <!--Übershcrig-->
+            <h4>Konto Erstellen</h4>
+
+            <!--create acc-->
+            <form action="">
+                <!--Email-->
+                <div class="field">
+                    <div class="field-label">
+                        <i class="fa-solid fa-at"></i>
+                        email Adresse
+                    </div>
+                    <input class="field-input" type="email" name="email" placeholder="mustermann@gmail.com" />
+                </div>
+
+                <!--Email-->
+                <div class="field">
+                    <div class="field-label">
+                        <i class="fa-regular fa-user"></i>
+                        Benutzername
+                    </div>
+                    <input class="field-input" type="text" name="username" placeholder="YungHurn" />
+                </div>
+
+                <!--passwort-->
+                <div class="field">
+                    <div class="field-label">
+                        <i class="fa-solid fa-key"></i>
                         Passwort
                     </div>
                     <input class="field-input" type="password" name="password" />
@@ -59,7 +86,7 @@
                 <!--passwort-repead-->
                 <div class="field">
                     <div class="field-label">
-                        <span class="at">@</span>
+                        <i class="fa-solid fa-key"></i>
                         Passwort wiederholen
                     </div>
                     <input class="field-input" type="password-repeat" name="password" />
@@ -68,7 +95,6 @@
                 <!--submit-->
                 <input type="submit" value="Erstellen" class="button">
             </form>
-           
         </div>
     </div>
 </body>
