@@ -34,7 +34,7 @@
         <!--left-->
         <div id="nav-right">
             <!--Login-->
-            <a href="" class="button">Sign up</a>
+            <a href="pages/account.php" class="button">Sign up</a>
         </div>
     </div>
 
