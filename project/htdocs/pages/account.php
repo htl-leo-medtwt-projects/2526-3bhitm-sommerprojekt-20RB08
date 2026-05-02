@@ -47,6 +47,12 @@
                 <!--submit-->
                 <input type="submit" value="Anmelden" class="button">
             </form>
+
+            <!--Switch-->
+            <div class="switch">
+                Ich besitze noch KEIN Konto
+                <div class="switch-color">Konto Erstellen</div>
+            </div>
         </div>
 
         <!--Light-->
@@ -95,6 +101,12 @@
                 <!--submit-->
                 <input type="submit" value="Erstellen" class="button">
             </form>
+
+            <!--Switch-->
+            <div class="switch">
+                Ich besitze noch KEIN Konto
+                <div class="switch-color">Konto Erstellen</div>
+            </div>
         </div>
     </div>
 </body>
