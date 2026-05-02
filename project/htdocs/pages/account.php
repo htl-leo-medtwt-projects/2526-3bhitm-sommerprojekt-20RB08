@@ -12,16 +12,15 @@
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/29a9c6b8a3.js" crossorigin="anonymous"></script>
 
-    <style>
-        
-    </style>
+    <!--JS-->
+    <script src="../scripts/account/switch.js" defer></script>
 </head>
 <body>
     <!--form-div-->
     <div id="view">
         <!--Dark-->
         <div id="dark">
-            <div class="wrap">
+            <div class="wrap" id="wrap-dark">
                 <!--Übershcrig-->
                 <h4>Anmelden</h4>
 
@@ -52,14 +51,14 @@
                 <!--Switch-->
                 <div class="switch">
                     Ich besitze noch KEIN Konto
-                    <div class="switch-color">Konto Erstellen</div>
+                    <div class="switch-color" onclick="switchToSignUp()">Konto Erstellen</div>
                 </div>
             </div>
         </div>
 
         <!--Light-->
         <div id="light">
-            <div class="wrap">
+            <div class="wrap" id="wrap-light">
                 <!--Übershcrig-->
                 <h4>Konto Erstellen</h4>
 
@@ -107,8 +106,8 @@
 
                 <!--Switch-->
                 <div class="switch">
-                    Ich besitze noch KEIN Konto
-                    <div class="switch-color">Konto Erstellen</div>
+                    Ich besitze bereits ein Konto
+                    <div class="switch-color" onclick="switchToSignIn()">Anmelden</div>
                 </div>
             </div>
         </div>
