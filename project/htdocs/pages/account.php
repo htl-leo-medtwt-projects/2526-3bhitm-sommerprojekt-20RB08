@@ -7,6 +7,8 @@ $usernameHolder = "";
 
 # create user
 require '../phpCode/account/createUser.php';
+require '../phpCode/account/login.php';
+
 
 # print errors
 function printErrors($errors) {
@@ -62,14 +64,14 @@ function printErrors($errors) {
                 <h4>Anmelden</h4>
 
                 <!--create acc-->
-                <form action="">
+                <form action="" method="post">
                     <!--Email-->
                     <div class="field">
                         <div class="field-label">
                             <i class="fa-regular fa-user"></i>
                             Benutzername
                         </div>
-                        <input class="field-input" type="text" name="username" placeholder="YungHurn" />
+                        <input class="field-input" type="text" name="username" placeholder="YungHurn" value="<?php echo $usernameHolder ?>"/>
                     </div>
 
                     <!--passwort-->
@@ -84,6 +86,11 @@ function printErrors($errors) {
                     <!--submit-->
                     <input type="submit" name="login" value="Anmelden" class="button">
                 </form>
+
+                <!--error-->
+                <div class="error">
+                    <?php echo printErrors($errorsLogin) ?>
+                </div>
 
                 <!--Switch-->
                 <div class="switch">
@@ -152,6 +159,7 @@ function printErrors($errors) {
 
                 <!--error-->
                 <div class="error">
+                    sdfdsjf
                     <?php echo printErrors($errorMesagesCreate) ?>
                 </div>
 

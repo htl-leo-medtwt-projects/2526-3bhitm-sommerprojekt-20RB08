@@ -60,24 +60,23 @@ if (!empty($_POST['createUser'])){
 
         # user hinzufügen
         $conn->query($insertStatement);
-        
+
+        # neu erstellten user aus db holen
+        $stmt = $conn->prepare("SELECT * FROM user WHERE username = ? LIMIT 1");
+        $stmt->bind_param("s", $_username);
+        $stmt->execute();
+        $user = $stmt->get_result()->fetch_assoc();
+
         # session speichern
         $_SESSION['login'] = true;
-        $_SESSION['username'] = $_username;
-        
+        $_SESSION['user'] = $user;
+
         # auf die index seit umleite
         header("Location: ../index.php");
     } else {
         // holder speichern
         $emailHolder = $_email;
         $usernameHolder = $_username;
-
-         # session speicher
-        $_SESSION['login'] = true;
-        $_SESSION['username'] = $_username;
     }
 }
 
-
-# close database
-$conn->close();
