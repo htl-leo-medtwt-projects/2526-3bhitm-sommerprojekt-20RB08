@@ -61,10 +61,20 @@ if (!empty($_POST['createUser'])){
         # user hinzufügen
         $conn->query($insertStatement);
         
+        # session speichern
+        $_SESSION['login'] = true;
+        $_SESSION['username'] = $_username;
+        
+        # auf die index seit umleite
+        header("Location: ../index.php");
     } else {
         // holder speichern
         $emailHolder = $_email;
         $usernameHolder = $_username;
+
+         # session speicher
+        $_SESSION['login'] = true;
+        $_SESSION['username'] = $_username;
     }
 }
 

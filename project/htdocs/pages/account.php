@@ -1,4 +1,6 @@
 <?php
+#session starte
+session_start();
 // holder
 $emailHolder = "";
 $usernameHolder = "";

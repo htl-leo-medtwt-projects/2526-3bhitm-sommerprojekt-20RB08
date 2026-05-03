@@ -55,4 +55,3 @@ const navInput = `<!--left-->
 function createNav() {
     nav.innerHTML = navInput;
 }
-createNav();

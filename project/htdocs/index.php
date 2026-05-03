@@ -1,3 +1,10 @@
+<?php
+# session starte
+session_start();
+
+# get log
+require "phpCode/log.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,13 +35,13 @@
             </div>
             <!--wege-->
             <a href="index.html" id="aktivePage">Home</a>
-            <a href="pages/tricks.php?difficulty=all&category=all&preference=all&search=" id="aktivePage">Browse Tricks</a>
+            <a href="pages/tricks.php?difficulty=all&category=all&preference=all&search=">Browse Tricks</a>
         </div>
 
         <!--left-->
         <div id="nav-right">
             <!--Login-->
-            <a href="pages/account.php" class="button">Sign up</a>
+            <?php echo getLogButton() ?>
         </div>
     </div>
 

@@ -1,6 +1,9 @@
 <?php
-// session starten
+# session starte
 session_start();
+
+# get log
+require "../phpCode/log.php";
 // imdfilepath
 $imgFilePath = "../img/";
 // requre
@@ -40,10 +43,10 @@ require __DIR__ . '/../phpCode/tricks/generateTricksCard.php';
             <a href="tricks.php?difficulty=all&category=all&preference=all&search=" id="aktivePage">Browse Tricks</a>
         </div>
 
-        <!--left-->
+         <!--left-->
         <div id="nav-right">
             <!--Login-->
-            <a href="" class="button">Sign up</a>
+            <?php echo getLogButton() ?>
         </div>
     </div>
 

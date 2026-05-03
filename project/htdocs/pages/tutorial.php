@@ -1,6 +1,9 @@
 <?php
-// session
+# session starte
 session_start();
+
+# get log
+require "../phpCode/log.php";
 
 require  __DIR__ . '/../phpCode/tutorial/trickId.php';
 
@@ -39,10 +42,10 @@ require __DIR__ . '/../phpCode/tutorial/randomTricks.php';
             <a href="tricks.php?" id="aktivePage">Browse Tricks</a>
         </div>
 
-        <!--left-->
+         <!--left-->
         <div id="nav-right">
             <!--Login-->
-            <a href="" class="button">Sign up</a>
+            <?php echo getLogButton() ?>
         </div>
     </div>
 
