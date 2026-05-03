@@ -13,6 +13,7 @@
     <script src="https://kit.fontawesome.com/29a9c6b8a3.js" crossorigin="anonymous"></script>
 
     <!--JS-->
+    <script src="../scripts/account/generateMarque.js" defer></script>
     <script src="../scripts/account/switch.js" defer></script>
 </head>
 <body>
@@ -20,6 +21,11 @@
     <div id="view">
         <!--Dark-->
         <div id="dark">
+            <!--marque-->
+            <div class="marque-container">
+            </div>
+            
+            <!--wrap-->
             <div class="wrap" id="wrap-dark">
                 <!--Übershcrig-->
                 <h4>Anmelden</h4>
@@ -58,6 +64,12 @@
 
         <!--Light-->
         <div id="light">
+            <!--marque-->
+            <div class="marque-container">
+            </div>
+
+
+            <!--wrap-->
             <div class="wrap" id="wrap-light">
                 <!--Übershcrig-->
                 <h4>Konto Erstellen</h4>

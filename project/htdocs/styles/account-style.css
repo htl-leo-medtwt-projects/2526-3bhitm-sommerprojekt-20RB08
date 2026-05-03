@@ -13,9 +13,9 @@
 #view>* {
     width: 50%;
     height: 100vh;
+    position: relative;
+    overflow: hidden;
 }
-
-
 
 /** algemeines ****/
 h4 {
@@ -67,15 +67,20 @@ form {
     background-color: var(--color-black);
 }
 
-
-
 #dark * {
     color: white;
+}
+
+#dark .logoColor{
+    color: var(--color-tertiary-blue);
 }
 
 /****************************
  * light
  **************************/
+ #light .logoColor{
+    color: var(--color-primary-blue);
+}
 
 /*** submit ***/
 input[type="submit"] {
@@ -137,7 +142,44 @@ input[type="submit"] {
     font-weight: bold;
     cursor: pointer;
 }
+/*********************
+ * marque
+ *******************/
+.marque-container{
+    width: 100vh;
+    height: 100%;
 
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    transform: rotate(-90deg);
+}
+.marquee-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+
+  font-size: 80px;
+  font-family: var(--font-IBM);
+  font-weight: bold;
+}
+
+.marquee-track {
+  display: inline-flex;
+  gap: 2rem;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee-track-reverse {
+  display: inline-flex;
+  gap: 2rem;
+  animation: marquee 30s linear infinite reverse;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); } /* genau 50%, weil Inhalt 2x */
+}
 
 /*********************************************************************************************************************************
  * Responsive (von claude generiert) 
@@ -201,7 +243,7 @@ input[type="submit"] {
 
     /* Verhindert iOS-Auto-Zoom beim Tippen */
     .field-input {
-        font-size: 16px;
+        font-size: var(--font-size-s);
     }
 
     .switch {
