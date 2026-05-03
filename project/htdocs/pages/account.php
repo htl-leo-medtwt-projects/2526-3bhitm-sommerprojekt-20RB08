@@ -1,3 +1,22 @@
+<?php
+// holder
+$emailHolder = "";
+$usernameHolder = "";
+
+# create user
+require '../phpCode/account/createUser.php';
+
+# print errors
+function printErrors($errors) {
+    $s = "";
+
+    foreach($errors as $error) {
+        $s = "$error <br>";
+    }
+    
+    return $s;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +34,13 @@
     <!--JS-->
     <script src="../scripts/account/generateMarque.js" defer></script>
     <script src="../scripts/account/switch.js" defer></script>
+    
+    <script>
+        // claude
+        document.addEventListener('DOMContentLoaded', function() {
+            <?php echo !empty($_POST['createUser']) ? "switchToSignUp();" : "switchToSignIn();"; ?>
+        });
+    </script>
 </head>
 <body>
     <!--form-div-->
@@ -54,7 +80,7 @@
                     </div>
 
                     <!--submit-->
-                    <input type="submit" value="Anmelden" class="button">
+                    <input type="submit" name="login" value="Anmelden" class="button">
                 </form>
 
                 <!--Switch-->
@@ -81,14 +107,14 @@
                 <h4>Konto Erstellen</h4>
 
                 <!--create acc-->
-                <form action="">
+                <form action="" method="post">
                     <!--Email-->
                     <div class="field">
                         <div class="field-label">
                             <i class="fa-solid fa-at"></i>
                             email Adresse
                         </div>
-                        <input class="field-input" type="email" name="email" placeholder="mustermann@gmail.com" />
+                        <input class="field-input" type="email" name="email" placeholder="mustermann@gmail.com" value="<?php echo $emailHolder ?>"/>
                     </div>
 
                     <!--Email-->
@@ -97,7 +123,7 @@
                             <i class="fa-regular fa-user"></i>
                             Benutzername
                         </div>
-                        <input class="field-input" type="text" name="username" placeholder="YungHurn" />
+                        <input class="field-input" type="text" name="username" placeholder="YungHurn" value="<?php echo $usernameHolder ?>"/>
                     </div>
 
                     <!--passwort-->
@@ -106,7 +132,7 @@
                             <i class="fa-solid fa-key"></i>
                             Passwort
                         </div>
-                        <input class="field-input" type="password" name="password" />
+                        <input class="field-input" type="password" name="password1" />
                     </div>
 
                     <!--passwort-repead-->
@@ -115,12 +141,17 @@
                             <i class="fa-solid fa-key"></i>
                             Passwort wiederholen
                         </div>
-                        <input class="field-input" type="password-repeat" name="password" />
+                        <input class="field-input" type="password" name="password2" />
                     </div>
 
                     <!--submit-->
-                    <input type="submit" value="Erstellen" class="button">
+                    <input type="submit" name="createUser" value="Erstellen" class="button">
                 </form>
+
+                <!--error-->
+                <div class="error">
+                    <?php echo printErrors($errorMesagesCreate) ?>
+                </div>
 
                 <!--Switch-->
                 <div class="switch">

@@ -49,4 +49,3 @@ function switchToSignIn() {
         marqueDark.style.opacity = 0;
         marqueLight.style.opacity = 1;
 }
-switchToSignIn();
