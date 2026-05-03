@@ -43,7 +43,7 @@ if (!$isLoggedIn) {
 // EINGELOGGT: Abfrage mit User-Daten (Favorit, Status)
 // -------------------------------------------------------
 } else {
-    $username = $_SESSION["username"];
+    $username = $_SESSION["user"]["username"];
 
     $sql = "SELECT t.id, t.titel, t.description, t.created_at, t.image_path,
                    d.name AS difficulty_name,

@@ -63,7 +63,8 @@ function getOverview() {
                             <i class='fa-solid fa-check fa-sm'></i>
                             Gemeistert
                         </a>
-                    </div>           
+                    </div>
+                </div>
         ";
     }
 
@@ -73,7 +74,6 @@ function getOverview() {
     $s .= "
             <!--Schwirigkeit-->
             <div class='text $difficultyClass'>$difficultyName</div>
-        </div>
     ";
 
     return $s;
