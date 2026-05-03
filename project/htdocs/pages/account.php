@@ -27,6 +27,9 @@
             
             <!--wrap-->
             <div class="wrap" id="wrap-dark">
+                <!--leave-->
+                <a href="../index.php" class="leave"><i class="fa-solid fa-x fa-2xl"></i></a>
+
                 <!--Übershcrig-->
                 <h4>Anmelden</h4>
 
@@ -71,6 +74,9 @@
 
             <!--wrap-->
             <div class="wrap" id="wrap-light">
+                <!--leave-->
+                <a href="../index.php" class="leave"><i class="fa-solid fa-x fa-2xl"></i></a>
+
                 <!--Übershcrig-->
                 <h4>Konto Erstellen</h4>
 

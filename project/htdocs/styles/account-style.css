@@ -78,6 +78,9 @@ form {
 /****************************
  * light
  **************************/
+ #light .leave {
+    color: black;
+}
  #light .logoColor{
     color: var(--color-primary-blue);
 }
@@ -116,6 +119,15 @@ input[type="submit"] {
 
 .wrap >* {
     width: 100%;
+}
+
+/*** leave ***/
+.wrap .leave{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    text-decoration: none;
+    width: fit-content;
 }
 
 /*** dark ***/
