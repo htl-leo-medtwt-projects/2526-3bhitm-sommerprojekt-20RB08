@@ -3,6 +3,9 @@ const light = document.getElementById('light');
 const wrapDark = document.getElementById('wrap-dark');
 const wrapLight = document.getElementById('wrap-light');
 
+const marqueDark = document.getElementById('marque-dark');
+const marqueLight = document.getElementById('marque-light');
+
 function isMobile() {
     return window.innerWidth <= 809;
 }
@@ -21,6 +24,10 @@ function switchToSignUp() {
         wrapDark.style.opacity = 0;
         wrapLight.style.opacity = 1;
     }
+
+    // logo animation
+        marqueDark.style.opacity = 1;
+        marqueLight.style.opacity = 0;
 }
 
 /*********************************
@@ -37,4 +44,9 @@ function switchToSignIn() {
         wrapDark.style.opacity = 1;
         wrapLight.style.opacity = 0;
     }
+
+    // logo animation
+        marqueDark.style.opacity = 0;
+        marqueLight.style.opacity = 1;
 }
+switchToSignIn();

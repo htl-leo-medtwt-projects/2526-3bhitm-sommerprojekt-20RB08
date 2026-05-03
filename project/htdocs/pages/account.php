@@ -22,7 +22,7 @@
         <!--Dark-->
         <div id="dark">
             <!--marque-->
-            <div class="marque-container">
+            <div class="marque-container" id="marque-dark">
             </div>
             
             <!--wrap-->
@@ -65,7 +65,7 @@
         <!--Light-->
         <div id="light">
             <!--marque-->
-            <div class="marque-container">
+            <div class="marque-container" id="marque-light">
             </div>
 
 
