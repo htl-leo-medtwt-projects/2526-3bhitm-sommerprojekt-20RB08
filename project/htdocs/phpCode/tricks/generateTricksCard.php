@@ -45,36 +45,40 @@ function getTrickCard () {
                     <hr class='seperate'>
         ";
 
-        // ist angemeldetß
+        # angemeledte klassen
+        $favoritClass = "";
+        $learningClass = "";
+        $masterdClass = "";
+
+        // ist angemeldet
         if (isset($_SESSION['login']) && $_SESSION['login']) {
-
-        } else {
-            // ist nicht angemeldet
-            $s .= "   
-            <!--Status-->
-                    <div class='card-status'>
-                        <!--Favorite-->
-                        <div class='card-status-opt'>
-                            <i class='fa-regular fa-star fa-sm'></i>
-                            Favorite
-                        </div>
-
-                        <!--Lernen-->
-                        <div class='card-status-opt'>
-                            <i class='fa-regular fa-clock fa-sm'></i>
-                            Lernen
-                        </div>
-
-                        <!--Gemeistert-->
-                        <div class='card-status-opt'>
-                            <i class='fa-solid fa-check fa-sm'></i>
-                            Gemeistert
-                        </div>
-                    </div> 
-            </a>";
-
+            $favoritClass  = isFavorite($trick) ? "isFavorite"     : "";
+            $learningClass = islearned($trick)  ? "selectedStatus" : "";
+            $masterdClass  = isMastered($trick) ? "selectedStatus" : "";
         }
+            
+        $s .= "   
+        <!--Status-->
+                <div class='card-status'>
+                    <!--Favorite-->
+                    <div class='card-status-opt $favoritClass'>
+                        <i class='fa-regular fa-star fa-sm'></i>
+                        Favorite
+                    </div>
 
+                    <!--Lernen-->
+                    <div class='card-status-opt $learningClass'>
+                        <i class='fa-regular fa-clock fa-sm'></i>
+                        Lernen
+                    </div>
+
+                    <!--Gemeistert-->
+                    <div class='card-status-opt $masterdClass'>
+                        <i class='fa-solid fa-check fa-sm'></i>
+                        Gemeistert
+                    </div>
+                </div> 
+        </a>";
     }
    
     return $s;
@@ -96,4 +100,22 @@ function getDifficultyColor($name) {
         default:
             return 'card-info-easy';
     }
+}
+
+/***********************
+ * is ..
+ ***+******************/
+# is favorite
+function isFavorite($trick) {
+    return trim(strtolower($trick['is_favorite'] ?? '')) === 'y';
+}
+
+# is learned
+function islearned($trick) {
+    return trim(strtolower($trick['status_name'] ?? '')) === 'lernen';
+}
+
+# is mastered
+function isMastered($trick) {
+    return trim(strtolower($trick['status_name'] ?? '')) === 'gemeistert';
 }
