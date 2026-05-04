@@ -46,7 +46,7 @@ require __DIR__ . '/../phpCode/tricks/generateTricksCard.php';
          <!--left-->
         <div id="nav-right">
             <!--Login-->
-            <?php echo getLogButton() ?>
+            <?php echo getLogButton('../') ?>
         </div>
     </div>
 

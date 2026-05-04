@@ -21,5 +21,5 @@ if (ini_get("session.use_cookies")) {
 session_destroy();
 
 /* Forward to Login */
-header("Location: ". __DIR__ ."/../index.php");
+header("Location: ../../index.php");
 exit;
