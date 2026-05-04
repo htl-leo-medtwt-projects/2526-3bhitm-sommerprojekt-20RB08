@@ -75,7 +75,7 @@ require "../phpCode/log.php";
             </div>
 
             <!--last tricks-->
-            <div class="text light-padding">Mein Fortschritt</div>
+            <h2 class="light-padding">Mein Fortschritt</h2>
 
             <div id="lastTricks">
                 <!--Trick-->
