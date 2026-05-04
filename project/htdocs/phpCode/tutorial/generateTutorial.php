@@ -9,9 +9,13 @@ function getOverview() {
     global $trickId;
     // fehler der id
     if ($trickId == -1) {
-        echo $trickId;
-        echo "FEHLER!";
-        return;
+        return "
+            <!--Header-->
+            <div id='header'>
+                <h1>FEHLER</h1>
+                <div class='text'>Die Trick ID existiert nicht!</div>
+            </div>
+             ";
     }
 
     #trick
@@ -102,9 +106,7 @@ function getDetail() {
     global $trickId;
     // fehler der id
     if ($trickId == -1) {
-        echo $trickId;
-        echo "FEHLER!";
-        return;
+        return ""; 
     }
 
     #trick

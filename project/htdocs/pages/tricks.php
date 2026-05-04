@@ -112,7 +112,7 @@ require __DIR__ . '/../phpCode/tricks/generateTricksCard.php';
         <!--Card Tricks-->
         <div class="area" id="card-tricks">
             <!--Card-Trick-->
-            <?php echo getTrickCard() ?>
+            <?php echo getTrickCard() ?: "<h1>Leider haben wir das nichts gefunden <i class='fa-regular fa-face-frown'></i>!</h1>" ?>
         </div>
 
         <!--Footer-->

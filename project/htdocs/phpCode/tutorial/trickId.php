@@ -33,6 +33,6 @@ function getTrick($strId) {
     $stmt->execute();
     $result = $stmt->get_result();
 
-    $trick = mysqli_fetch_all($result, MYSQLI_ASSOC);;
-    return $trick[0];
+    $trick = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    return $trick[0] ?? null;
 }
