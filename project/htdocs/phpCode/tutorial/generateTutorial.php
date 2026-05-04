@@ -37,17 +37,38 @@ function getOverview() {
     ";
 
      // ist angemeldet
+     $s .= "<!--trick bar-->
+                <div id='trick-bar'>";
     if (isset($_SESSION['login']) && $_SESSION['login']) {
+        $s .= "
+            <!--trick bar-->
+            <form action='' method='post' class='status'>
+                <!--Status-->
+                <div class='status'>
+                    <!--Favorite-->
+                    <button type='submit' name='action' value='favorite' class='status-opt'>
+                        <i class='fa-regular fa-star fa-sm'></i>
+                        Favorite
+                    </button>
+                    <!--Lernen-->
+                    <button type='submit' name='action' value='lenen' class='status-opt'>
+                        <i class='fa-regular fa-clock fa-sm'></i>
+                        Lernen
+                    </button>
 
+                    <!--Gemeistert-->
+                    <button type='submit' name='action' value='gemeistert' class='status-opt'>
+                        <i class='fa-solid fa-check fa-sm'></i>
+                        Gemeistert
+                    </button>
+                </div>
+            </form>
+        ";
     } else {
         // nicht angemeldet
-       
         #eigenschaften
-        
         $s .= 
         "
-                <!--trick bar-->
-                <div id='trick-bar'>
                     <!--Status-->
                     <div class='status'>
                         <!--Favorite-->
@@ -68,7 +89,6 @@ function getOverview() {
                             Gemeistert
                         </a>
                     </div>
-                </div>
         ";
     }
 
@@ -78,6 +98,7 @@ function getOverview() {
     $s .= "
             <!--Schwirigkeit-->
             <div class='text $difficultyClass'>$difficultyName</div>
+        </div>
     ";
 
     return $s;
