@@ -13,7 +13,6 @@ $trick = getTrick($trickIdStr);
 
 if (!empty($trick)){
     $trickId = $trick['id'];
-    $_SESSION['trick'] = $trick; # save trick in session
 }
 
 // get trick

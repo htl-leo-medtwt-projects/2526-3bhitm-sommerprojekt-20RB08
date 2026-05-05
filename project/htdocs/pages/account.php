@@ -159,7 +159,6 @@ function printErrors($errors) {
 
                 <!--error-->
                 <div class="error">
-                    sdfdsjf
                     <?php echo printErrors($errorMesagesCreate) ?>
                 </div>
 

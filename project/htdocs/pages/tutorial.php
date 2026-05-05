@@ -8,9 +8,14 @@ require "../phpCode/log.php";
 require  __DIR__ . '/../phpCode/tutorial/trickId.php';
 
 // require
+# generate
 require __DIR__ . '/../phpCode/tutorial/generateTutorial.php';
 
+# random tricks
 require __DIR__ . '/../phpCode/tutorial/randomTricks.php';
+
+# react to trickbar action todo
+require __DIR__ . "/../phpCode/tutorial/userTrickActions.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
