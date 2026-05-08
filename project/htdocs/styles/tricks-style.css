@@ -197,12 +197,12 @@
 .card-status {
     display: flex;
     gap: 20px;
-    padding: 0% var(--border-radius);
+    padding-left: var(--border-radius);
     color: var(--color-gray);
 }
 
 .isFavorite{
-    color: black;
+    color: #FFC107;
     font-weight: bold;
 }
 

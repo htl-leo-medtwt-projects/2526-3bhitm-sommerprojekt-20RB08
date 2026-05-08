@@ -40,6 +40,17 @@
     transform: scale(0.9);
 }
 
+.isFavorite{
+    color: #FFC107;
+    font-weight: bold;
+}
+
+.selectedStatus {
+    color: var(--color-secondary-blue);
+    font-weight: bold;
+}
+
+
 /** button weggeben***/
 button {
     appearance: none;

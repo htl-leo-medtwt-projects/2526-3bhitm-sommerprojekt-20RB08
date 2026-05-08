@@ -2,6 +2,9 @@
 // conntection
 require_once __DIR__ . '/../../datenBank/mysqlConnection.php';
 
+# isselected
+require_once __DIR__ . '/isSelected.php';
+
 /***************************
  * generate Overview
  *************************/
@@ -40,24 +43,29 @@ function getOverview() {
      $s .= "<!--trick bar-->
                 <div id='trick-bar'>";
     if (isset($_SESSION['login']) && $_SESSION['login']) {
+        # selectd
+        $favoriteClass = isFavorised() ? "isFavorite" : "";
+        $learningClass = isSelected("lernen") ? "selectedStatus" : "";
+        $masteredClass = isSelected("gemeistert") ? "selectedStatus" : "";
+
         $s .= "
             <!--trick bar-->
             <form action='' method='post' class='status'>
                 <!--Status-->
                 <div class='status'>
                     <!--Favorite-->
-                    <button type='submit' name='action' value='favorite' class='status-opt'>
+                    <button type='submit' name='action' value='favorite' class='status-opt $favoriteClass'>
                         <i class='fa-regular fa-star fa-sm'></i>
                         Favorite
                     </button>
                     <!--Lernen-->
-                    <button type='submit' name='action' value='lenen' class='status-opt'>
+                    <button type='submit' name='action' value='lenen' class='status-opt $learningClass'>
                         <i class='fa-regular fa-clock fa-sm'></i>
                         Lernen
                     </button>
 
                     <!--Gemeistert-->
-                    <button type='submit' name='action' value='gemeistert' class='status-opt'>
+                    <button type='submit' name='action' value='gemeistert' class='status-opt $masteredClass'>
                         <i class='fa-solid fa-check fa-sm'></i>
                         Gemeistert
                     </button>
