@@ -36,7 +36,7 @@ function isFavorised() {
     #print_r($userTrick);
     #echo '</pre>';
 
-    return strtolower($userTrick[0]['is_favorite']) == 'y';
+    return strtolower($userTrick[0]['is_favorite'] ?? 'n') == 'y';
 }
 
 /******************************
@@ -74,5 +74,5 @@ function isSelected($status) {
     #print_r($userTrick);
     #echo '</pre>';
 
-    return strtolower($userTrick[0]['status_name']) == strtolower($status);
+    return strtolower($userTrick[0]['status_name'] ?? '') == strtolower($status);
 }

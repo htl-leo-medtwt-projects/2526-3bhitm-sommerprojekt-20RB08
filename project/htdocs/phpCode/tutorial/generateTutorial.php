@@ -59,7 +59,7 @@ function getOverview() {
                         Favorite
                     </button>
                     <!--Lernen-->
-                    <button type='submit' name='action' value='lenen' class='status-opt $learningClass'>
+                    <button type='submit' name='action' value='lernen' class='status-opt $learningClass'>
                         <i class='fa-regular fa-clock fa-sm'></i>
                         Lernen
                     </button>

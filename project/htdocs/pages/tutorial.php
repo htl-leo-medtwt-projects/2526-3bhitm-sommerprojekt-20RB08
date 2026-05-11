@@ -16,6 +16,7 @@ require __DIR__ . '/../phpCode/tutorial/randomTricks.php';
 
 # react to trickbar action todo
 require __DIR__ . "/../phpCode/tutorial/userTrickActions.php";
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
