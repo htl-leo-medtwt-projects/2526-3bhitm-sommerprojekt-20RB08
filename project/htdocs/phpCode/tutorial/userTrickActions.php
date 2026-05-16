@@ -36,10 +36,24 @@ if (isset($_POST['action'])) {
         $stmt->execute();
     } 
 
+    /******************************
+     * lernen / gemeistert (claude)
+     *****************************/
+    if ($action === 'lernen' || $action === 'gemeistert') {
+        # Status-ID aus der Tabelle holen
+        $stmt = $conn->prepare("SELECT id FROM status WHERE LOWER(name) = ?");
+        $stmt->bind_param("s", $action);
+        $stmt->execute();
+        $statusRow = $stmt->get_result()->fetch_assoc();
+        $statusId  = $statusRow ? $statusRow['id'] : null;
 
-    /************************
-     * lernen / gemeistert
-     ***********************/
+        # Toggle: wenn schon dieser Status aktiv → auf NULL, sonst setzen
+        $newStatus = ($currentRow && $currentRow['status'] == $statusId) ? null : $statusId;
+
+        $stmt = $conn->prepare("UPDATE user_trick SET status = ? WHERE user = ? AND trick = ?");
+        $stmt->bind_param("isi", $newStatus, $username, $trickId);
+        $stmt->execute();
+    }
 
     # delete useles user
     deleteUselessTrickExists();
