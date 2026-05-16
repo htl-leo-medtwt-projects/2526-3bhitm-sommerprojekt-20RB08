@@ -37,6 +37,9 @@ if (isset($_POST['action'])) {
     /************************
      * lernen / gemeistert
      ***********************/
+
+    # delete useles user
+    deleteUselessTrickExists();
 }
 
 /************************
@@ -61,5 +64,16 @@ function ensureUserTrickExists() {
                                VALUES (?, ?, 'N', 1)");     
         $stmt->bind_param("si", $username, $trickId);
         $stmt->execute();
+    }
+}
+
+function deleteUselessTrickExists() {
+    // check if row exists, if not INSERT
+    global $conn;
+
+    $res = $conn->query("DELETE FROM user_trick WHERE (status is null or status = 1) and (lower(is_favorite) like 'n' or is_favorite is null)");
+
+    if (!$res){
+        echo "Fehler beim löschen";
     }
 }
