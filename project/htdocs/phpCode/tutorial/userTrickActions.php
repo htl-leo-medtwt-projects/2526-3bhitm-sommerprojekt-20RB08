@@ -43,6 +43,10 @@ if (isset($_POST['action'])) {
 
     # delete useles user
     deleteUselessTrickExists();
+
+    # redireck auf sich selber (um post zu löschen)
+    header("Location: /pages/tutorial.php?trickId=$trickId");
+    exit;
 }
 
 /************************
