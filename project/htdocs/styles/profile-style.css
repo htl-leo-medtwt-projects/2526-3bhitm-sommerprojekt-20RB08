@@ -72,6 +72,8 @@
 
     user-select: none;
     cursor: pointer;
+
+    text-decoration: none;
 }
 .trick:hover{
     transform: scale(1.1);

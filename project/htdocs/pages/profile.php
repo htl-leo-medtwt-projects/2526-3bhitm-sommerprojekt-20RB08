@@ -81,46 +81,7 @@ require "../phpCode/profile/info.php";
             <h2 class="light-padding">Mein Fortschritt</h2>
 
             <div id="lastTricks">
-                <!--Trick-->
-                <div class="trick">
-                    <!--Trick info -->
-                    <div class="trick-info">
-                        <h3>Name</h3>
-                        <div class="text">Kategorie</div>
-                    </div>
-                    <!--Difficulty-->
-                    <div class="card-info-easy ">Schwierigkeit</div>
-                </div>
-                <!--Trick-->
-                <div class="trick">
-                    <!--Trick info -->
-                    <div class="trick-info">
-                        <h3>Name</h3>
-                        <div class="text">Kategorie</div>
-                    </div>
-                    <!--Difficulty-->
-                    <div class="card-info-easy ">Schwierigkeit</div>
-                </div>
-                <!--Trick-->
-                <div class="trick">
-                    <!--Trick info -->
-                    <div class="trick-info">
-                        <h3>Name</h3>
-                        <div class="text">Kategorie</div>
-                    </div>
-                    <!--Difficulty-->
-                    <div class="card-info-easy ">Schwierigkeit</div>
-                </div>
-                <!--Trick-->
-                <div class="trick">
-                    <!--Trick info -->
-                    <div class="trick-info">
-                        <h3>Name</h3>
-                        <div class="text">Kategorie</div>
-                    </div>
-                    <!--Difficulty-->
-                    <div class="card-info-easy ">Schwierigkeit</div>
-                </div>
+                <?php printLastTricks() ?>
             </div>
 
         </div>
