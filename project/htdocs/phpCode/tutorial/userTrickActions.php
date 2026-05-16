@@ -30,7 +30,10 @@ if (isset($_POST['action'])) {
      * favorisiert
      ***********************/
     if($action == "favorite") {
-        
+        $newFav = (strtolower($currentRow['is_favorite']) === 'y' ) ? 'N' : 'Y';
+        $stmt = $conn->prepare("UPDATE user_trick SET is_favorite = ? WHERE user = ? AND trick = ?");
+        $stmt->bind_param("ssi", $newFav, $username, $trickId); 
+        $stmt->execute();
     } 
 
 
