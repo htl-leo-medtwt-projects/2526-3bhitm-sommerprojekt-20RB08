@@ -7,6 +7,9 @@ require "../datenBank/auth_check.php";
 
 # get log
 require "../phpCode/log.php";
+
+# get info
+require "../phpCode/profile/info.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -61,15 +64,15 @@ require "../phpCode/log.php";
             <div id="progresses">
                 <!--progress-->
                 <div class="progress">
-                    <h2>number</h2>
+                    <h2><?php echo getStatusCount(3) ?></h2>
                     <div class="text">Gemeistert</div>
                 </div>
                 <div class="progress">
-                    <h2>number</h2>
+                    <h2><?php echo getStatusCount(2) ?></h2>
                     <div class="text">Lernen</div>
                 </div>
                 <div class="progress">
-                    <h2>number</h2>
+                    <h2><?php echo getFavoriteCount() ?></h2>
                     <div class="text">Favoriten</div>
                 </div>
             </div>
