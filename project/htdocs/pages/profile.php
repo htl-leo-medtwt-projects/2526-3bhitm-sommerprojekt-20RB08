@@ -24,6 +24,7 @@ require "../phpCode/profile/info.php";
 
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/29a9c6b8a3.js" crossorigin="anonymous"></script>
+    <script src="../scripts/profile/delete.js" defer></script>
 </head>
 <body>
     <!--Nav-->
@@ -84,10 +85,25 @@ require "../phpCode/profile/info.php";
                 <?php printLastTricks() ?>
             </div>
 
-            <!--delet account-->
-            <div class="text" id="deleteButton">
+            <!--delet account Button-->
+            <div class="text" id="deleteButton" onclick="showDeleteInfo()">
                 <i class="fa-solid fa-delete-left"></i>
                 Konto Löschen
+            </div>
+
+            <!--delete acount info--> 
+            <div id="deleteAlter">
+                <!--cancel--> 
+                <div class="cancel" onclick="cancelDeleteAccount()"></div>
+                <!--info-->
+                <div id="deleteInfo">
+                    <h2>Konto Löschen</h2>
+                    <div class="text">
+                        Durch das Löschen des Accounts werden alle gespeicherten, favorisierten und erlernten Tricks 
+                        dauerhaft entfernt. Zudem wird das Konto vollständig aus dem System gelöscht.
+                    </div>
+                    <a href="" class="button">Löschen</a>
+                </div>
             </div>
         </div>
 
