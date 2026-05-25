@@ -1,5 +1,7 @@
 <?php
-session_start();
+if (session_status() === PHP_SESSION_NONE){
+    session_start();
+}
 
 /* delete all values */
 $_SESSION = [];
@@ -21,5 +23,5 @@ if (ini_get("session.use_cookies")) {
 session_destroy();
 
 /* Forward to Login */
-header("Location: ../../index.php");
+header("Location: /index.php");
 exit;
