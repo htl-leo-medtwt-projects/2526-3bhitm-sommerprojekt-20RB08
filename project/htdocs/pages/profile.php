@@ -84,6 +84,11 @@ require "../phpCode/profile/info.php";
                 <?php printLastTricks() ?>
             </div>
 
+            <!--delet account-->
+            <div class="text" id="deleteButton">
+                <i class="fa-solid fa-delete-left"></i>
+                Konto Löschen
+            </div>
         </div>
 
         <!--Footer-->
