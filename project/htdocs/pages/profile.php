@@ -102,7 +102,10 @@ require "../phpCode/profile/info.php";
                         Durch das Löschen des Accounts werden alle gespeicherten, favorisierten und erlernten Tricks 
                         dauerhaft entfernt. Zudem wird das Konto vollständig aus dem System gelöscht.
                     </div>
-                    <a href="" class="button">Löschen</a>
+                    <!--DeleteAccoutn-->
+                    <form action="../phpCode/profile/deleteAccount.php" method="post">
+                        <input name="deleteAccount" type="submit" value="Löschen" class="button">
+                    </form>
                 </div>
             </div>
         </div>

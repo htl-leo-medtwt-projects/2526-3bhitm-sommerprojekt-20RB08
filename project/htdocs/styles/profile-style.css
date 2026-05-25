@@ -138,12 +138,16 @@
     gap: 10px;
 }
 
+/* button */
 #deleteInfo .button {
     position: relative;
     display: block;
 
     padding: 10px;
+    border: none;
+    outline: none;
 }
+
 
 
 /*********************************************************************************************************************************
@@ -213,6 +217,7 @@
         padding: 0% 1%;
     }
 
+    /* deleteInfo */
     #deleteInfo {
         width: calc(var(--page-width) - 10px);
     }
