@@ -4,6 +4,9 @@ session_start();
 
 # get log
 require "phpCode/log.php";
+
+# snowcard
+require __DIR__ . "/phpCode/index/snowCard.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -77,51 +80,8 @@ require "phpCode/log.php";
 
             <!--Trick Cards-->
             <div class="area" id="trickCards">
-                <!--Trick Card-->
-                <div class="trickCard">
-                    <!--Trick-->
-                    <img src="img/tricks/ollie.avif" alt="ollie">
-                    <div class="layer">
-                        <h1>Ollie</h1>
-                        <div class="text">
-                            Hier sthet kleine information über ollie
-                        </div>
-                         <a href="" class="button">Learn More!</a>
-                    </div>
-                </div>
-                <div class="trickCard">
-                    <!--Trick-->
-                    <img src="img/tricks/carven.avif" alt="ollie">
-                    <div class="layer">
-                        <h1>Carven</h1>
-                        <div class="text">
-                            Hier sthet kleine information über ollie
-                        </div>
-                         <a href="" class="button">Learn More!</a>
-                    </div>
-                </div>
-                <div class="trickCard">
-                    <!--Trick-->
-                    <img src="img/tricks/carven.avif" alt="ollie">
-                    <div class="layer">
-                        <h1>Carven</h1>
-                        <div class="text">
-                            Hier sthet kleine information über ollie
-                        </div>
-                         <a href="" class="button">Learn More!</a>
-                    </div>
-                </div>
-                <div class="trickCard">
-                    <!--Trick-->
-                    <img src="img/tricks/ollie.avif" alt="ollie">
-                    <div class="layer">
-                        <h1>Ollie</h1>
-                        <div class="text">
-                            Hier sthet kleine information über ollie
-                        </div>
-                         <a href="" class="button">Learn More!</a>
-                    </div>
-                </div>
+                <?php printFourTrickCard() ?>
+                
             </div>
 
             <!--Trennung-->
