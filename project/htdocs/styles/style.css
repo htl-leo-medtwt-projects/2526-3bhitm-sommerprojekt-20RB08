@@ -73,7 +73,9 @@
 }
 
 .trickCard img {
+    aspect-ratio: 1 / 1;
     width: 100%;
+    object-fit: cover;
     border-radius: 10px;
     display: block;
     transition: all 0.5s;
