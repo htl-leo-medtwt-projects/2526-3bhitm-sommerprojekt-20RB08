@@ -91,14 +91,10 @@ function getDifficultyColor($name) {
     $newName = strtolower(trim($name));
 
     switch ($newName) {
-        case 'anfänger':
-            return 'card-info-easy';
-        case 'fortgeschritten':
-            return 'card-info-advanced';
-        case 'experte':
-            return 'card-info-hard';
-        default:
-            return 'card-info-easy';
+        case 'anfänger': return 'card-info-easy';
+        case 'fortgeschritten': return 'card-info-advanced';
+        case 'experte': return 'card-info-hard';
+        default: return 'card-info-easy';
     }
 }
 

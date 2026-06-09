@@ -176,7 +176,7 @@ function getDetail() {
     # tutorial img
     $s .= "
         <!--Tutorial img-->
-        <img src='../img/$tutorialImg' alt='$titel tutorial'>
+        <img src='../img/$tutorialImg' alt='$tutorialImg'>
     ";
 
     # tip
